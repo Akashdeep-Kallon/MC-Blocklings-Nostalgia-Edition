@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: blocklings
+Specification-Vendor: AkaH
+Specification-Version: 1
+Implementation-Title: MC-Blocklings-Port-main
+Implementation-Version: 1.0.0
+Implementation-Vendor: AkaH
+Implementation-Timestamp: 2026-03-05T18:55:59+0100
+

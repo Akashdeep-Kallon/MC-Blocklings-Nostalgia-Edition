@@ -1,0 +1,1032 @@
+Java Launcher: C:\Program Files\Java\jdk-17\bin\java.exe
+Arguments: '--input, C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\libs\blocklings-1.0.0.jar, --output, C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar\output.jar, --names, C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar\mappings.tsrg, --lib, C:\Users\MANBIR\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.10_mapped_official_1.20.1\forge-1.20.1-47.4.10_mapped_official_1.20.1-recomp.jar, --lib, C:\Users\MANBIR\.gradle\caches\forge_gradle\minecraft_repo\versions\1.20.1\client-extra.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.20.1-47.4.10\55c46d27e7cfc8b829af8a28e562a7d290fa38b6\fmlloader-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.19\376cc9c8ea60720cf027c01fc033de915699801c\JarJarSelector-0.3.19.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarMetadata\0.3.19\83feaa9b770e6ac0e96ee4fc23fa89325c5fe2\JarJarMetadata-0.3.19.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\31.1-jre\60458f877d055d0c9114d9e1a2efb737b4bc282c\guava-31.1-jre.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.1\1227f9e0666314f9de41477e3ec277e542ed7f7b\java-objc-bridge-1.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\7.0.1\3b4972a0cdb135853dba219be61a79b22cff1309\forgespi-7.0.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.1.5\f3da18e12c696d35a47c82cbb2cc8b5aa15e1154\mergetool-1.1.5-api.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\24.0.1\13c5c75c4206580aa4d683bffee658caae6c9f43\annotations-24.0.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\securejarhandler\2.1.10\51e6a22c6c716beb11e244bf5b8be480f51dd6b5\securejarhandler-2.1.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\coremods\5.2.4\e30bab269d896613e38396274711410b3a0e4b87\coremods-5.2.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\modlauncher\10.0.9\6d9443f56f50bb85cea383686ff9c867391458b\modlauncher-10.0.9.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.openjdk.nashorn\nashorn-core\15.4\f67f5ffaa5f5130cf6fb9b133da00c7df3b532a5\nashorn-core-15.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.8\36e4d212970388e5bd2c5180292012502df461bb\asm-commons-9.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.8\395f1c1f035258511f27bc9b2583d76e4b143f59\asm-util-9.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.8\b9747a320844b6cb1eacd90d8ecfd260a16c01d3\asm-analysis-9.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.8\18419ca5b77a2f81097c741e7872e6ab8d2f40d\asm-tree-9.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.8\dc19ecb3f7889b7860697215cae99c0f9b6f6b4b\asm-9.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\accesstransformers\8.0.4\272d240aa73f42195b2a68e2ebd8b701ecf41f63\accesstransformers-8.0.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4\4.9.1\e92af8ab33e428461927b484e90bb155a4f3a052\antlr4-4.9.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.9.1\428664f05d2b7f7b7610204b5aa7c1763f62011a\antlr4-runtime-4.9.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\eventbus\6.0.5\699143dd438431d06b57416944f7cedbe52e1475\eventbus-6.0.5.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\unsafe\0.2.0\54d7a0a5e8fdb71b973025caa46f341ae5904f39\unsafe-0.2.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\toml\3.6.4\51d6cefb2b55ee55ee26b16391212fb2c7dfb4f4\toml-3.6.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\core\3.6.4\510f174abbf1c947494db50ef2445683bd52c230\core-3.6.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.8.5\4433f50c07debefaed0553bd0068f4f48d449313\maven-artifact-3.8.5.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.jodah\typetools\0.6.3\a01aaa6ddaea9ec07ec4f209487b7a46a526283a\typetools-0.6.3.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecrell\terminalconsoleappender\1.2.0\96d02cd3b384ff015a8fef4223bcb4ccf1717c95\terminalconsoleappender-1.2.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.12.1\4382ab1382c7b6f379377ed5f665dc2f6e1218bc\jline-reader-3.12.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.12.1\c777448314e050d980a6b697c140f3bfe9eb7416\jline-terminal-3.12.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.spongepowered\mixin\0.8.5\9d1c0c3a304ae6697ecd477218fa61b850bf57fc\mixin-0.8.5.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\bootstraplauncher\1.1.2\c546e00443d8432cda6baa1c860346980742628\bootstraplauncher-1.1.2.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarFileSystems\0.3.19\2464eb7d6b9ddb9db36a82cf8a95193e5c6fe020\JarJarFileSystems-0.3.19.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlearlydisplay\1.20.1-47.4.10\a262fa19e65f643aae210b4275b53bee053aa765\fmlearlydisplay-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.github.oshi\oshi-core\6.2.2\54f5efc19bca95d709d9a37d19ffcbba3d21c1a6\oshi-core-6.2.2.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10\dd9b193aef96e973d5a11ab13cd17430c2e4306b\gson-2.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j\71.1\9e7d3304c23f9ba5cb71915f7cce23231a57a445\icu4j-71.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\4.0.43\2ff9d747a77570a07a60d32ac77eb6162ad2a2d9\authlib-4.0.43.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\blocklist\1.0.10\5c685c5ffa94c4cd39496c7184c1d122e515ecef\blocklist-1.0.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.1.8\5244ce82c3337bba4a196a3ce858bfaecc74404a\brigadier-1.1.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\6.0.8\3ba4a30557a9b057760af4011f909ba619fc5125\datafixerupper-6.0.8.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\logging\1.1.1\832b8e6674a9b325a5175a3a6267dfaf34c85139\logging-1.1.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\2.2.10\da05971b07cbb379d002cf7eaec6a2048211fefc\patchy-2.2.10.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.17.9\3cad216e3a7f0c19b4b394388bc9ffc446f13b14\text2speech-1.17.9.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.13\e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada\httpclient-4.5.13.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.15\49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d\commons-codec-1.15.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.11.0\a2503f302b11ebde7ebc3df41daebe0e4eea3689\commons-io-2.11.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.82.Final\644041d1fa96a5d3130a29e8978630d716d76e38\netty-handler-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.82.Final\b77200379acb345a9ffdece1c605e591ac3e4e0a\netty-codec-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-classes-epoll\4.1.82.Final\e7c7dd18deac93105797f30057c912651ea76521\netty-transport-classes-epoll-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-unix-common\4.1.82.Final\3e895b35ca1b8a0eca56cacff4c2dde5d2c6abce\netty-transport-native-unix-common-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.82.Final\e431a218d91acb6476ccad5f5aafde50aa3945ca\netty-transport-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.82.Final\a544270cf1ae8b8077082f5036436a9a9971ea71\netty-buffer-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.82.Final\38f665ae8dcd29032eea31245ba7806bed2e0fa8\netty-resolver-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-common\4.1.82.Final\22d148e85c3f5ebdacc0ce1f5aabb1d420f73f3\netty-common-4.1.82.Final.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\8.5.9\bb7ea75ecdb216654237830b3a96d87ad91f8cc5\fastutil-8.5.9.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\5.12.1\97406a297c852f4a41e688a176ec675f72e8329\jna-platform-5.12.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\5.12.1\b1e93a735caea94f503e95e6fe79bf9cdc1e985d\jna-5.12.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.21\4ec95b60d4e86b5c95a0e919cb172a0af98011ef\commons-compress-1.21.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.12.0\c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e\commons-lang3-3.12.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.15\7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d\httpcore-4.4.15.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.19.0\3b6eeb4de4c49c0fe38a4ee27188ff5fee44d0bb\log4j-core-2.19.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-slf4j2-impl\2.19.0\5c04bfdd63ce9dceb2e284b81e96b6a70010ee10\log4j-slf4j2-impl-2.19.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.19.0\ea1b37f38c327596b216542bc636cfdc0b8036fa\log4j-api-2.19.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.joml\joml\1.10.5\22566d58af70ad3d72308bab63b8339906deb649\joml-1.10.5.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\cbac1b8d30cb4795149c1ef540f912671a8616d0\lwjgl-glfw-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\ed892f945cf7e79c8756796f32d00fa4ceaf573b\lwjgl-glfw-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\beda65ee503443e60aa196d58ed31f8d001dc22a\lwjgl-glfw-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\b997e3391d6ce8f05487e7335d95c606043884a1\lwjgl-glfw-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\a817bcf213db49f710603677457567c37d53e103\lwjgl-jemalloc-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\948a89b76a16aa324b046ae9308891216ffce5f9\lwjgl-jemalloc-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\cae85c4edb219c88b6a0c26a87955ad98dc9519d\lwjgl-jemalloc-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\fb476c8ec110e1c137ad3ce8a7f7bfe6b11c6324\lwjgl-jemalloc-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\2623a6b8ae1dfcd880738656a9f0243d2e6840bd\lwjgl-openal-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\30a474d0e57193d7bc128849a3ab66bc9316fdb1\lwjgl-openal-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\40d65f1a7368a2aa47336f9cb69f5a190cf9975a\lwjgl-openal-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\888349f7b1be6fbae58bf8edfb9ef12def04c4e3\lwjgl-openal-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\831a5533a21a5f4f81bbc51bb13e9899319b5411\lwjgl-opengl-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\c1807e9bd571402787d7e37e3029776ae2513bb8\lwjgl-opengl-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\527d78f1e9056aff3ed02ce93019c73c5e8f1721\lwjgl-opengl-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\deef3eb9b178ff2ff3ce893cc72ae741c3a17974\lwjgl-opengl-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\b119297cf8ed01f247abe8685857f8e7fcf5980f\lwjgl-stb-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\86315914ac119efdb02dc9e8e978ade84f1702af\lwjgl-stb-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\fde63cdd2605c00636721a6c8b961e41d1f6b247\lwjgl-stb-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\a8d41f419eecb430b7c91ea2ce2c5c451cae2091\lwjgl-stb-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\ff1914111ef2e3e0110ef2dabc8d8cdaad82347\lwjgl-tinyfd-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\a5d830475ec0958d9fdba1559efa99aef211e6ff\lwjgl-tinyfd-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\83a5e780df610829ff3a737822b4f931cffecd91\lwjgl-tinyfd-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\842eedd876fae354abc308c98a263f6bbc9e8a4d\lwjgl-tinyfd-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\ae58664f88e18a9bb2c77b063833ca7aaec484cb\lwjgl-3.3.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\36c37f16ab611b3aa11f3bcf80b1d509b4ce6b\lwjgl-3.3.1-natives-windows.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\f46cadcf95675908fd3a550d63d9d709cb68998\lwjgl-3.3.1-natives-windows-arm64.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\3b14f4beae9dd39791ec9e12190a9380cd8a3ce6\lwjgl-3.3.1-natives-windows-x86.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.machinezoo.noexception\noexception\1.7.1\b65330c98e38a1f915fa54a6e5eca496505e3f0a\noexception-1.7.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.1\f48d81adce2abf5ad3cfe463df517952749e03bc\slf4j-api-2.0.1.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.3.0\cf43b5391de623b36fe066a21127baef82c64022\plexus-utils-3.3.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.12.0\d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5\checker-qual-3.12.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.11.0\c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69\error_prone_annotations-2.11.0.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\ST4\4.3\92f2c1ad8d84abcbeead6cf7f2c53a04166293c2\ST4-4.3.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.2\cd9cd41361c155f3af0f653009dcecb08d8b4afd\antlr-runtime-3.5.2.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.abego.treelayout\org.abego.treelayout.core\1.0.3\457216e8e6578099ae63667bb1e4439235892028\org.abego.treelayout.core-1.0.3.jar, --lib, C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.glassfish\javax.json\1.0.4\3178f73569fd7a1e5ffc464e680f7a8cc784b85a\javax.json-1.0.4.jar, --disable-abstract-param'
+Classpath:
+ - C:\Users\MANBIR\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\ForgeAutoRenamingTool\1.0.6\ForgeAutoRenamingTool-1.0.6-all.jar
+Working directory: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar
+Main class: net.minecraftforge.fart.Main
+====================================
+Forge Auto Renaming Tool v1.0.6
+lib: C:\Users\MANBIR\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.10_mapped_official_1.20.1\forge-1.20.1-47.4.10_mapped_official_1.20.1-recomp.jar
+lib: C:\Users\MANBIR\.gradle\caches\forge_gradle\minecraft_repo\versions\1.20.1\client-extra.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.20.1-47.4.10\55c46d27e7cfc8b829af8a28e562a7d290fa38b6\fmlloader-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.19\376cc9c8ea60720cf027c01fc033de915699801c\JarJarSelector-0.3.19.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarMetadata\0.3.19\83feaa9b770e6ac0e96ee4fc23fa89325c5fe2\JarJarMetadata-0.3.19.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\31.1-jre\60458f877d055d0c9114d9e1a2efb737b4bc282c\guava-31.1-jre.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.1\1227f9e0666314f9de41477e3ec277e542ed7f7b\java-objc-bridge-1.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\7.0.1\3b4972a0cdb135853dba219be61a79b22cff1309\forgespi-7.0.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.1.5\f3da18e12c696d35a47c82cbb2cc8b5aa15e1154\mergetool-1.1.5-api.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\24.0.1\13c5c75c4206580aa4d683bffee658caae6c9f43\annotations-24.0.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\securejarhandler\2.1.10\51e6a22c6c716beb11e244bf5b8be480f51dd6b5\securejarhandler-2.1.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\coremods\5.2.4\e30bab269d896613e38396274711410b3a0e4b87\coremods-5.2.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\modlauncher\10.0.9\6d9443f56f50bb85cea383686ff9c867391458b\modlauncher-10.0.9.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.openjdk.nashorn\nashorn-core\15.4\f67f5ffaa5f5130cf6fb9b133da00c7df3b532a5\nashorn-core-15.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.8\36e4d212970388e5bd2c5180292012502df461bb\asm-commons-9.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.8\395f1c1f035258511f27bc9b2583d76e4b143f59\asm-util-9.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.8\b9747a320844b6cb1eacd90d8ecfd260a16c01d3\asm-analysis-9.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.8\18419ca5b77a2f81097c741e7872e6ab8d2f40d\asm-tree-9.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.8\dc19ecb3f7889b7860697215cae99c0f9b6f6b4b\asm-9.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\accesstransformers\8.0.4\272d240aa73f42195b2a68e2ebd8b701ecf41f63\accesstransformers-8.0.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4\4.9.1\e92af8ab33e428461927b484e90bb155a4f3a052\antlr4-4.9.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.9.1\428664f05d2b7f7b7610204b5aa7c1763f62011a\antlr4-runtime-4.9.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\eventbus\6.0.5\699143dd438431d06b57416944f7cedbe52e1475\eventbus-6.0.5.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\unsafe\0.2.0\54d7a0a5e8fdb71b973025caa46f341ae5904f39\unsafe-0.2.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\toml\3.6.4\51d6cefb2b55ee55ee26b16391212fb2c7dfb4f4\toml-3.6.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\core\3.6.4\510f174abbf1c947494db50ef2445683bd52c230\core-3.6.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.8.5\4433f50c07debefaed0553bd0068f4f48d449313\maven-artifact-3.8.5.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.jodah\typetools\0.6.3\a01aaa6ddaea9ec07ec4f209487b7a46a526283a\typetools-0.6.3.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecrell\terminalconsoleappender\1.2.0\96d02cd3b384ff015a8fef4223bcb4ccf1717c95\terminalconsoleappender-1.2.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.12.1\4382ab1382c7b6f379377ed5f665dc2f6e1218bc\jline-reader-3.12.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.12.1\c777448314e050d980a6b697c140f3bfe9eb7416\jline-terminal-3.12.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.spongepowered\mixin\0.8.5\9d1c0c3a304ae6697ecd477218fa61b850bf57fc\mixin-0.8.5.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\cpw.mods\bootstraplauncher\1.1.2\c546e00443d8432cda6baa1c860346980742628\bootstraplauncher-1.1.2.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarFileSystems\0.3.19\2464eb7d6b9ddb9db36a82cf8a95193e5c6fe020\JarJarFileSystems-0.3.19.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlearlydisplay\1.20.1-47.4.10\a262fa19e65f643aae210b4275b53bee053aa765\fmlearlydisplay-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.github.oshi\oshi-core\6.2.2\54f5efc19bca95d709d9a37d19ffcbba3d21c1a6\oshi-core-6.2.2.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10\dd9b193aef96e973d5a11ab13cd17430c2e4306b\gson-2.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j\71.1\9e7d3304c23f9ba5cb71915f7cce23231a57a445\icu4j-71.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\4.0.43\2ff9d747a77570a07a60d32ac77eb6162ad2a2d9\authlib-4.0.43.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\blocklist\1.0.10\5c685c5ffa94c4cd39496c7184c1d122e515ecef\blocklist-1.0.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.1.8\5244ce82c3337bba4a196a3ce858bfaecc74404a\brigadier-1.1.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\6.0.8\3ba4a30557a9b057760af4011f909ba619fc5125\datafixerupper-6.0.8.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\logging\1.1.1\832b8e6674a9b325a5175a3a6267dfaf34c85139\logging-1.1.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\2.2.10\da05971b07cbb379d002cf7eaec6a2048211fefc\patchy-2.2.10.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.17.9\3cad216e3a7f0c19b4b394388bc9ffc446f13b14\text2speech-1.17.9.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.13\e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada\httpclient-4.5.13.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.15\49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d\commons-codec-1.15.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.11.0\a2503f302b11ebde7ebc3df41daebe0e4eea3689\commons-io-2.11.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.82.Final\644041d1fa96a5d3130a29e8978630d716d76e38\netty-handler-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.82.Final\b77200379acb345a9ffdece1c605e591ac3e4e0a\netty-codec-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-classes-epoll\4.1.82.Final\e7c7dd18deac93105797f30057c912651ea76521\netty-transport-classes-epoll-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-unix-common\4.1.82.Final\3e895b35ca1b8a0eca56cacff4c2dde5d2c6abce\netty-transport-native-unix-common-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.82.Final\e431a218d91acb6476ccad5f5aafde50aa3945ca\netty-transport-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.82.Final\a544270cf1ae8b8077082f5036436a9a9971ea71\netty-buffer-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.82.Final\38f665ae8dcd29032eea31245ba7806bed2e0fa8\netty-resolver-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\io.netty\netty-common\4.1.82.Final\22d148e85c3f5ebdacc0ce1f5aabb1d420f73f3\netty-common-4.1.82.Final.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\8.5.9\bb7ea75ecdb216654237830b3a96d87ad91f8cc5\fastutil-8.5.9.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\5.12.1\97406a297c852f4a41e688a176ec675f72e8329\jna-platform-5.12.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\5.12.1\b1e93a735caea94f503e95e6fe79bf9cdc1e985d\jna-5.12.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.21\4ec95b60d4e86b5c95a0e919cb172a0af98011ef\commons-compress-1.21.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.12.0\c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e\commons-lang3-3.12.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.15\7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d\httpcore-4.4.15.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.19.0\3b6eeb4de4c49c0fe38a4ee27188ff5fee44d0bb\log4j-core-2.19.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-slf4j2-impl\2.19.0\5c04bfdd63ce9dceb2e284b81e96b6a70010ee10\log4j-slf4j2-impl-2.19.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.19.0\ea1b37f38c327596b216542bc636cfdc0b8036fa\log4j-api-2.19.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.joml\joml\1.10.5\22566d58af70ad3d72308bab63b8339906deb649\joml-1.10.5.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\cbac1b8d30cb4795149c1ef540f912671a8616d0\lwjgl-glfw-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\ed892f945cf7e79c8756796f32d00fa4ceaf573b\lwjgl-glfw-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\beda65ee503443e60aa196d58ed31f8d001dc22a\lwjgl-glfw-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.3.1\b997e3391d6ce8f05487e7335d95c606043884a1\lwjgl-glfw-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\a817bcf213db49f710603677457567c37d53e103\lwjgl-jemalloc-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\948a89b76a16aa324b046ae9308891216ffce5f9\lwjgl-jemalloc-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\cae85c4edb219c88b6a0c26a87955ad98dc9519d\lwjgl-jemalloc-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.3.1\fb476c8ec110e1c137ad3ce8a7f7bfe6b11c6324\lwjgl-jemalloc-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\2623a6b8ae1dfcd880738656a9f0243d2e6840bd\lwjgl-openal-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\30a474d0e57193d7bc128849a3ab66bc9316fdb1\lwjgl-openal-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\40d65f1a7368a2aa47336f9cb69f5a190cf9975a\lwjgl-openal-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.3.1\888349f7b1be6fbae58bf8edfb9ef12def04c4e3\lwjgl-openal-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\831a5533a21a5f4f81bbc51bb13e9899319b5411\lwjgl-opengl-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\c1807e9bd571402787d7e37e3029776ae2513bb8\lwjgl-opengl-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\527d78f1e9056aff3ed02ce93019c73c5e8f1721\lwjgl-opengl-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.3.1\deef3eb9b178ff2ff3ce893cc72ae741c3a17974\lwjgl-opengl-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\b119297cf8ed01f247abe8685857f8e7fcf5980f\lwjgl-stb-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\86315914ac119efdb02dc9e8e978ade84f1702af\lwjgl-stb-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\fde63cdd2605c00636721a6c8b961e41d1f6b247\lwjgl-stb-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.3.1\a8d41f419eecb430b7c91ea2ce2c5c451cae2091\lwjgl-stb-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\ff1914111ef2e3e0110ef2dabc8d8cdaad82347\lwjgl-tinyfd-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\a5d830475ec0958d9fdba1559efa99aef211e6ff\lwjgl-tinyfd-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\83a5e780df610829ff3a737822b4f931cffecd91\lwjgl-tinyfd-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\842eedd876fae354abc308c98a263f6bbc9e8a4d\lwjgl-tinyfd-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\ae58664f88e18a9bb2c77b063833ca7aaec484cb\lwjgl-3.3.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\36c37f16ab611b3aa11f3bcf80b1d509b4ce6b\lwjgl-3.3.1-natives-windows.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\f46cadcf95675908fd3a550d63d9d709cb68998\lwjgl-3.3.1-natives-windows-arm64.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.1\3b14f4beae9dd39791ec9e12190a9380cd8a3ce6\lwjgl-3.3.1-natives-windows-x86.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.machinezoo.noexception\noexception\1.7.1\b65330c98e38a1f915fa54a6e5eca496505e3f0a\noexception-1.7.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.1\f48d81adce2abf5ad3cfe463df517952749e03bc\slf4j-api-2.0.1.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.3.0\cf43b5391de623b36fe066a21127baef82c64022\plexus-utils-3.3.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.12.0\d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5\checker-qual-3.12.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.11.0\c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69\error_prone_annotations-2.11.0.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\ST4\4.3\92f2c1ad8d84abcbeead6cf7f2c53a04166293c2\ST4-4.3.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.2\cd9cd41361c155f3af0f653009dcecb08d8b4afd\antlr-runtime-3.5.2.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.abego.treelayout\org.abego.treelayout.core\1.0.3\457216e8e6578099ae63667bb1e4439235892028\org.abego.treelayout.core-1.0.3.jar
+lib: C:\Users\MANBIR\.gradle\caches\modules-2\files-2.1\org.glassfish\javax.json\1.0.4\3178f73569fd7a1e5ffc464e680f7a8cc784b85a\javax.json-1.0.4.jar
+log: null
+input: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\libs\blocklings-1.0.0.jar
+output: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar\output.jar
+threads: 16
+Names: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar\mappings.tsrg(reversed: false)
+Fix Annotations: false
+Fix Records: false
+Fix Identifiers: false
+Fix SourceFile: false
+Fix Line Numbers: false
+Strip codesigning signatures: false
+Adding Libraries to Inheritance
+Reading Input: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\libs\blocklings-1.0.0.jar
+Adding input to inheritance map
+Processing entries
+Conflicting propagated mapping for com/akah/blocklings/client/gui/containers/slots/ToolSlot/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraft/world/inventory/Slot/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/containers/EquipmentContainer/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/containers/EquipmentContainer/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
+Conflicting propagated mapping for com/akah/blocklings/block/LightBlock/getShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/shapes/CollisionContext;)Lnet/minecraft/world/phys/shapes/VoxelShape; from net/minecraft/world/level/block/state/BlockBehaviour/getShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/shapes/CollisionContext;)Lnet/minecraft/world/phys/shapes/VoxelShape;: getShape -> m_5940_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingItem/useOn(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/item/Item/useOn(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult;: useOn -> m_6225_
+Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
+Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
+Conflicting propagated mapping for com/akah/blocklings/util/BlocklingsComponent/getStyle()Lnet/minecraft/network/chat/Style; from net/minecraft/network/chat/Component/getStyle()Lnet/minecraft/network/chat/Style;: getStyle -> m_7383_
+Conflicting propagated mapping for com/akah/blocklings/util/BlocklingsComponent/getVisualOrderText()Lnet/minecraft/util/FormattedCharSequence; from net/minecraft/network/chat/Component/getVisualOrderText()Lnet/minecraft/util/FormattedCharSequence;: getVisualOrderText -> m_7532_
+Conflicting propagated mapping for com/akah/blocklings/util/BlocklingsComponent/getContents()Lnet/minecraft/network/chat/ComponentContents; from net/minecraft/network/chat/Component/getContents()Lnet/minecraft/network/chat/ComponentContents;: getContents -> m_214077_
+Conflicting propagated mapping for com/akah/blocklings/util/BlocklingsComponent/getSiblings()Ljava/util/List; from net/minecraft/network/chat/Component/getSiblings()Ljava/util/List;: getSiblings -> m_7360_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/shouldDespawnInPeaceful()Z from net/minecraft/world/entity/Mob/shouldDespawnInPeaceful()Z: shouldDespawnInPeaceful -> m_8028_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getBreedOffspring(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/AgeableMob;)Lnet/minecraft/world/entity/AgeableMob; from net/minecraft/world/entity/AgeableMob/getBreedOffspring(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/AgeableMob;)Lnet/minecraft/world/entity/AgeableMob;: getBreedOffspring -> m_142606_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/remove(Lnet/minecraft/world/entity/Entity$RemovalReason;)V from net/minecraft/world/entity/LivingEntity/remove(Lnet/minecraft/world/entity/Entity$RemovalReason;)V: remove -> m_142687_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData; from net/minecraft/world/entity/AgeableMob/finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData;: finalizeSpawn -> m_6518_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/readAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/entity/TamableAnimal/readAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V: readAdditionalSaveData -> m_7378_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getOffhandItem()Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/entity/LivingEntity/getOffhandItem()Lnet/minecraft/world/item/ItemStack;: getOffhandItem -> m_21206_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/hasItemInSlot(Lnet/minecraft/world/entity/EquipmentSlot;)Z from net/minecraft/world/entity/LivingEntity/hasItemInSlot(Lnet/minecraft/world/entity/EquipmentSlot;)Z: hasItemInSlot -> m_21033_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/customServerAiStep()V from net/minecraft/world/entity/animal/Animal/customServerAiStep()V: customServerAiStep -> m_8024_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getHandSlots()Ljava/lang/Iterable; from net/minecraft/world/entity/Mob/getHandSlots()Ljava/lang/Iterable;: getHandSlots -> m_6167_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/tick()V from net/minecraft/world/entity/Mob/tick()V: tick -> m_8119_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/checkDespawn()V from net/minecraft/world/entity/Mob/checkDespawn()V: checkDespawn -> m_6043_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/setItemInHand(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/entity/LivingEntity/setItemInHand(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V: setItemInHand -> m_21008_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/mobInteract(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/entity/animal/Animal/mobInteract(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;: mobInteract -> m_6071_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getAddEntityPacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/entity/Entity/getAddEntityPacket()Lnet/minecraft/network/protocol/Packet;: getAddEntityPacket -> m_5654_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/checkSpawnRules(Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;)Z from net/minecraft/world/entity/PathfinderMob/checkSpawnRules(Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;)Z: checkSpawnRules -> m_5545_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/addAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/entity/TamableAnimal/addAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V: addAdditionalSaveData -> m_7380_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/maybeDisableShield(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/entity/Mob/maybeDisableShield(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V: maybeDisableShield -> m_21424_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/dropCustomDeathLoot(Lnet/minecraft/world/damagesource/DamageSource;IZ)V from net/minecraft/world/entity/Mob/dropCustomDeathLoot(Lnet/minecraft/world/damagesource/DamageSource;IZ)V: dropCustomDeathLoot -> m_7472_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z from net/minecraft/world/entity/animal/Animal/hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z: hurt -> m_6469_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getAllSlots()Ljava/lang/Iterable; from net/minecraft/world/entity/Entity/getAllSlots()Ljava/lang/Iterable;: getAllSlots -> m_20158_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getItemInHand(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/entity/LivingEntity/getItemInHand(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;: getItemInHand -> m_21120_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getArmorSlots()Ljava/lang/Iterable; from net/minecraft/world/entity/Mob/getArmorSlots()Ljava/lang/Iterable;: getArmorSlots -> m_6168_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/doHurtTarget(Lnet/minecraft/world/entity/Entity;)Z from net/minecraft/world/entity/Mob/doHurtTarget(Lnet/minecraft/world/entity/Entity;)Z: doHurtTarget -> m_7327_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/dropAllDeathLoot(Lnet/minecraft/world/damagesource/DamageSource;)V from net/minecraft/world/entity/LivingEntity/dropAllDeathLoot(Lnet/minecraft/world/damagesource/DamageSource;)V: dropAllDeathLoot -> m_6668_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/setItemSlot(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/entity/Mob/setItemSlot(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V: setItemSlot -> m_8061_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/setTarget(Lnet/minecraft/world/entity/LivingEntity;)V from net/minecraft/world/entity/Mob/setTarget(Lnet/minecraft/world/entity/LivingEntity;)V: setTarget -> m_6710_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/tame(Lnet/minecraft/world/entity/player/Player;)V from net/minecraft/world/entity/TamableAnimal/tame(Lnet/minecraft/world/entity/player/Player;)V: tame -> m_21828_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getScale()F from net/minecraft/world/entity/LivingEntity/getScale()F: getScale -> m_6134_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/registerGoals()V from net/minecraft/world/entity/Mob/registerGoals()V: registerGoals -> m_8099_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/removeWhenFarAway(D)Z from net/minecraft/world/entity/animal/Animal/removeWhenFarAway(D)Z: removeWhenFarAway -> m_6785_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/setCustomName(Lnet/minecraft/network/chat/Component;)V from net/minecraft/world/entity/Entity/setCustomName(Lnet/minecraft/network/chat/Component;)V: setCustomName -> m_6593_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getMainHandItem()Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/entity/LivingEntity/getMainHandItem()Lnet/minecraft/world/item/ItemStack;: getMainHandItem -> m_21205_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/fireImmune()Z from net/minecraft/world/entity/Entity/fireImmune()Z: fireImmune -> m_5825_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getItemBySlot(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/entity/Mob/getItemBySlot(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack;: getItemBySlot -> m_6844_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/BlocklingEntity/getStandingEyeHeight(Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F from net/minecraft/world/entity/LivingEntity/getStandingEyeHeight(Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F: getStandingEyeHeight -> m_6431_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/getContainerSize()I from net/minecraft/world/Container/getContainerSize()I: getContainerSize -> m_6643_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/setItem(ILnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/Container/setItem(ILnet/minecraft/world/item/ItemStack;)V: setItem -> m_6836_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/removeItem(II)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/Container/removeItem(II)Lnet/minecraft/world/item/ItemStack;: removeItem -> m_7407_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/getItem(I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/Container/getItem(I)Lnet/minecraft/world/item/ItemStack;: getItem -> m_8020_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/clearContent()V from net/minecraft/world/Clearable/clearContent()V: clearContent -> m_6211_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/isEmpty()Z from net/minecraft/world/Container/isEmpty()Z: isEmpty -> m_7983_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/setChanged()V from net/minecraft/world/Container/setChanged()V: setChanged -> m_6596_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/removeItemNoUpdate(I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/Container/removeItemNoUpdate(I)Lnet/minecraft/world/item/ItemStack;: removeItemNoUpdate -> m_8016_
+Conflicting propagated mapping for com/akah/blocklings/inventory/AbstractInventory/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/Container/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6542_
+Conflicting propagated mapping for com/akah/blocklings/inventory/EquipmentInventory/setItem(ILnet/minecraft/world/item/ItemStack;)V from com/akah/blocklings/inventory/AbstractInventory/setItem(ILnet/minecraft/world/item/ItemStack;)V: setItem -> m_6836_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/Screen/keyPressed(III)Z: keyPressed -> m_7933_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/keyReleased(III)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/keyReleased(III)Z: keyReleased -> m_7920_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/Screen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/mouseScrolled(DDD)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/mouseScrolled(DDD)Z: mouseScrolled -> m_6050_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/onClose()V from net/minecraft/client/gui/screens/Screen/onClose()V: onClose -> m_7379_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/init()V from net/minecraft/client/gui/screens/Screen/init()V: init -> m_7856_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/mouseClicked(DDI)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/mouseClicked(DDI)Z: mouseClicked -> m_6375_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/tick()V from net/minecraft/client/gui/screens/Screen/tick()V: tick -> m_86600_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/charTyped(CI)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/charTyped(CI)Z: charTyped -> m_5534_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsScreen/mouseReleased(DDI)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/mouseReleased(DDI)Z: mouseReleased -> m_6348_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/screens/TabbedScreen/isPauseScreen()Z from net/minecraft/client/gui/screens/Screen/isPauseScreen()Z: isPauseScreen -> m_7043_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/keyPressed(III)Z: keyPressed -> m_7933_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/keyReleased(III)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/keyReleased(III)Z: keyReleased -> m_7920_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/mouseScrolled(DDD)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/mouseScrolled(DDD)Z: mouseScrolled -> m_6050_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/onClose()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/onClose()V: onClose -> m_7379_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V: renderLabels -> m_280003_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/containerTick()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/containerTick()V: containerTick -> m_181908_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/mouseClicked(DDI)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/mouseClicked(DDI)Z: mouseClicked -> m_6375_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/charTyped(CI)Z from net/minecraft/client/gui/components/events/ContainerEventHandler/charTyped(CI)Z: charTyped -> m_5534_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/mouseReleased(DDI)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/mouseReleased(DDI)Z: mouseReleased -> m_6348_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/screens/TabbedAbstractContainerScreen/isPauseScreen()Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/isPauseScreen()Z: isPauseScreen -> m_7043_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/screens/TabbedAbstractContainerScreen/init()V from com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen/init()V: init -> m_7856_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canUse()Z from net/minecraft/world/entity/ai/goal/Goal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingGoal/start()V from net/minecraft/world/entity/ai/goal/Goal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingGoal/stop()V from net/minecraft/world/entity/ai/goal/Goal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canContinueToUse()Z from net/minecraft/world/entity/ai/goal/Goal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/client/gui/screen/screens/TestScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/Screen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/layer/BlocklingHeldItemLayer/render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V from net/minecraft/client/renderer/entity/layers/RenderLayer/render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V: render -> m_6494_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/model/BlocklingModel/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V from net/minecraft/client/model/EntityModel/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V: setupAnim -> m_6973_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/model/BlocklingModel/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V from net/minecraft/client/model/Model/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V: renderToBuffer -> m_7695_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/model/BlocklingModel/translateToHand(Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;)V from net/minecraft/client/model/ArmedModel/translateToHand(Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;)V: translateToHand -> m_6002_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/tick()V from net/minecraft/world/entity/ai/goal/Goal/tick()V: tick -> m_8037_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/BlocklingRenderer/render(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/BlocklingRenderer/render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/BlocklingRenderer/render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
+Conflicting propagated mapping for com/akah/blocklings/client/renderer/entity/BlocklingRenderer/getTextureLocation(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation; from net/minecraft/client/renderer/entity/EntityRenderer/getTextureLocation(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;: getTextureLocation -> m_5478_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingFarmGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingFarmGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingMineGoal/stop()V from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingMineGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingMineGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingWoodcutGoal/stop()V from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingWoodcutGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingWoodcutGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFindBlocklingsGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFindBlocklingsGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFindBlocklingsGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFindBlocklingsGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal/tick()V from net/minecraft/world/entity/ai/goal/Goal/tick()V: tick -> m_8037_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal/tick()V from net/minecraft/world/entity/ai/goal/Goal/tick()V: tick -> m_8037_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal/tick()V from net/minecraft/world/entity/ai/goal/Goal/tick()V: tick -> m_8037_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal/stop()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/stop()V: stop -> m_8041_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal/start()V from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/start()V: start -> m_8056_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal/canContinueToUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal/canUse()Z from com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWildPanicGoal/canUse()Z from net/minecraft/world/entity/ai/goal/PanicGoal/canUse()Z: canUse -> m_8036_
+Conflicting propagated mapping for com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWildPanicGoal/canContinueToUse()Z from net/minecraft/world/entity/ai/goal/PanicGoal/canContinueToUse()Z: canContinueToUse -> m_8045_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingWhistleItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingWhistleItem/getName(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component; from net/minecraft/world/item/Item/getName(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;: getName -> m_7626_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingWhistleItem/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder; from net/minecraft/world/item/Item/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;: use -> m_7203_
+Conflicting propagated mapping for com/akah/blocklings/item/BlocklingWhistleItem/inventoryTick(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V from net/minecraft/world/item/Item/inventoryTick(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V: inventoryTick -> m_6883_
+Conflicting propagated mapping for com/akah/blocklings/item/VitalCoreItem/useOn(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/item/Item/useOn(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult;: useOn -> m_6225_
+Conflicting propagated mapping for net/minecraftforge/common/ForgeSpawnEggItem/getType(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/EntityType; from net/minecraft/world/item/SpawnEggItem/getType(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/EntityType;: getType -> m_43228_
+Adding extras
+Sorting
+Writing Output: C:\Users\MANBIR\Downloads\MC-Blocklings-Port-main\build\reobfJar\output.jar
+  META-INF/
+  META-INF/MANIFEST.MF
+  META-INF/mods.toml
+  assets/
+  assets/blocklings/
+  assets/blocklings/blockstates/
+  assets/blocklings/blockstates/light.json
+  assets/blocklings/lang/
+  assets/blocklings/lang/de_de.json
+  assets/blocklings/lang/en_us.json
+  assets/blocklings/lang/es_es.json
+  assets/blocklings/lang/fr_fr.json
+  assets/blocklings/lang/ru_ru.json
+  assets/blocklings/models/
+  assets/blocklings/models/item/
+  assets/blocklings/models/item/blockling.json
+  assets/blocklings/models/item/blockling_acacia_log.json
+  assets/blocklings/models/item/blockling_birch_log.json
+  assets/blocklings/models/item/blockling_dark_oak_log.json
+  assets/blocklings/models/item/blockling_diamond.json
+  assets/blocklings/models/item/blockling_dirt.json
+  assets/blocklings/models/item/blockling_emerald.json
+  assets/blocklings/models/item/blockling_glowstone.json
+  assets/blocklings/models/item/blockling_gold.json
+  assets/blocklings/models/item/blockling_grass.json
+  assets/blocklings/models/item/blockling_iron.json
+  assets/blocklings/models/item/blockling_jungle_log.json
+  assets/blocklings/models/item/blockling_lapis.json
+  assets/blocklings/models/item/blockling_netherite.json
+  assets/blocklings/models/item/blockling_oak_log.json
+  assets/blocklings/models/item/blockling_obsidian.json
+  assets/blocklings/models/item/blockling_quartz.json
+  assets/blocklings/models/item/blockling_spawn_egg.json
+  assets/blocklings/models/item/blockling_spruce_log.json
+  assets/blocklings/models/item/blockling_stone.json
+  assets/blocklings/models/item/blockling_whistle.json
+  assets/blocklings/models/item/vital_core.json
+  assets/blocklings/sounds.json
+  assets/blocklings/sounds/
+  assets/blocklings/sounds/blockling_whistle.ogg
+  assets/blocklings/textures/
+  assets/blocklings/textures/entity/
+  assets/blocklings/textures/entity/blockling/
+  assets/blocklings/textures/entity/blockling/blockling_acacia_log.png
+  assets/blocklings/textures/entity/blockling/blockling_bedrock.png
+  assets/blocklings/textures/entity/blockling/blockling_birch_log.png
+  assets/blocklings/textures/entity/blockling/blockling_dark_oak_log.png
+  assets/blocklings/textures/entity/blockling/blockling_diamond.png
+  assets/blocklings/textures/entity/blockling/blockling_dirt.png
+  assets/blocklings/textures/entity/blockling/blockling_emerald.png
+  assets/blocklings/textures/entity/blockling/blockling_glowstone.png
+  assets/blocklings/textures/entity/blockling/blockling_gold.png
+  assets/blocklings/textures/entity/blockling/blockling_grass.png
+  assets/blocklings/textures/entity/blockling/blockling_iron.png
+  assets/blocklings/textures/entity/blockling/blockling_jungle_log.png
+  assets/blocklings/textures/entity/blockling/blockling_lapis.png
+  assets/blocklings/textures/entity/blockling/blockling_mask_0.png
+  assets/blocklings/textures/entity/blockling/blockling_mask_1.png
+  assets/blocklings/textures/entity/blockling/blockling_mask_2.png
+  assets/blocklings/textures/entity/blockling/blockling_netherite.png
+  assets/blocklings/textures/entity/blockling/blockling_oak_log.png
+  assets/blocklings/textures/entity/blockling/blockling_obsidian.png
+  assets/blocklings/textures/entity/blockling/blockling_pumpkin.png
+  assets/blocklings/textures/entity/blockling/blockling_quartz.png
+  assets/blocklings/textures/entity/blockling/blockling_sponge.png
+  assets/blocklings/textures/entity/blockling/blockling_spruce_log.png
+  assets/blocklings/textures/entity/blockling/blockling_stone.png
+  assets/blocklings/textures/entity/blockling/blockling_villager.png
+  assets/blocklings/textures/entity/blockling/blockling_wetsponge.png
+  assets/blocklings/textures/entity/blockling/melon.png
+  assets/blocklings/textures/gui/
+  assets/blocklings/textures/gui/_/
+  assets/blocklings/textures/gui/_/6j56.pdn
+  assets/blocklings/textures/gui/_/6j56.png
+  assets/blocklings/textures/gui/_/abilities_widgets222222222222222.png
+  assets/blocklings/textures/gui/_/asd.png
+  assets/blocklings/textures/gui/_/chest1.png
+  assets/blocklings/textures/gui/_/chest2.pdn
+  assets/blocklings/textures/gui/common_widgets.png
+  assets/blocklings/textures/gui/equipment.png
+  assets/blocklings/textures/gui/skills.png
+  assets/blocklings/textures/gui/skills_backgrounds/
+  assets/blocklings/textures/gui/skills_backgrounds/combat.png
+  assets/blocklings/textures/gui/skills_backgrounds/farming.png
+  assets/blocklings/textures/gui/skills_backgrounds/general.png
+  assets/blocklings/textures/gui/skills_backgrounds/mining.png
+  assets/blocklings/textures/gui/skills_backgrounds/woodcutting.png
+  assets/blocklings/textures/gui/skills_icons/
+  assets/blocklings/textures/gui/skills_icons/combat.pdn
+  assets/blocklings/textures/gui/skills_icons/combat.png
+  assets/blocklings/textures/gui/skills_icons/farming.pdn
+  assets/blocklings/textures/gui/skills_icons/farming.png
+  assets/blocklings/textures/gui/skills_icons/general.pdn
+  assets/blocklings/textures/gui/skills_icons/general.png
+  assets/blocklings/textures/gui/skills_icons/mining.pdn
+  assets/blocklings/textures/gui/skills_icons/mining.png
+  assets/blocklings/textures/gui/skills_icons/woodcutting.pdn
+  assets/blocklings/textures/gui/skills_icons/woodcutting.png
+  assets/blocklings/textures/gui/stats.png
+  assets/blocklings/textures/gui/tabs.png
+  assets/blocklings/textures/gui/task_configure.png
+  assets/blocklings/textures/gui/tasks.png
+  assets/blocklings/textures/gui/whitelist.png
+  assets/blocklings/textures/item/
+  assets/blocklings/textures/item/blockling.png
+  assets/blocklings/textures/item/blockling_acacia_log.png
+  assets/blocklings/textures/item/blockling_bedrock.png
+  assets/blocklings/textures/item/blockling_birch_log.png
+  assets/blocklings/textures/item/blockling_dark_oak_log.png
+  assets/blocklings/textures/item/blockling_diamond.png
+  assets/blocklings/textures/item/blockling_dirt.png
+  assets/blocklings/textures/item/blockling_emerald.png
+  assets/blocklings/textures/item/blockling_glowstone.png
+  assets/blocklings/textures/item/blockling_gold.png
+  assets/blocklings/textures/item/blockling_grass.png
+  assets/blocklings/textures/item/blockling_iron.png
+  assets/blocklings/textures/item/blockling_jungle_log.png
+  assets/blocklings/textures/item/blockling_lapis.png
+  assets/blocklings/textures/item/blockling_netherite.png
+  assets/blocklings/textures/item/blockling_oak_log.png
+  assets/blocklings/textures/item/blockling_obsidian.png
+  assets/blocklings/textures/item/blockling_pumpkin.png
+  assets/blocklings/textures/item/blockling_quartz.png
+  assets/blocklings/textures/item/blockling_spruce_log.png
+  assets/blocklings/textures/item/blockling_stone.png
+  assets/blocklings/textures/item/blockling_whistle.png
+  assets/blocklings/textures/item/vital_core.png
+  blocklings.png
+  com/
+  com/akah/
+  com/akah/blocklings/
+  com/akah/blocklings/Blocklings.class
+  com/akah/blocklings/block/
+  com/akah/blocklings/block/BlocklingsBlocks.class
+  com/akah/blocklings/block/LightBlock.class
+  com/akah/blocklings/capabilities/
+  com/akah/blocklings/capabilities/BlockSelectCapability$1.class
+  com/akah/blocklings/capabilities/BlockSelectCapability$Provider.class
+  com/akah/blocklings/capabilities/BlockSelectCapability.class
+  com/akah/blocklings/capabilities/BlocklingsCapabilities.class
+  com/akah/blocklings/client/
+  com/akah/blocklings/client/gui/
+  com/akah/blocklings/client/gui/BlocklingGuiHandler$OpenMessage.class
+  com/akah/blocklings/client/gui/BlocklingGuiHandler.class
+  com/akah/blocklings/client/gui/containers/
+  com/akah/blocklings/client/gui/containers/BlocklingsMenuTypes.class
+  com/akah/blocklings/client/gui/containers/EquipmentContainer.class
+  com/akah/blocklings/client/gui/containers/slots/
+  com/akah/blocklings/client/gui/containers/slots/ToolSlot.class
+  com/akah/blocklings/client/gui/control/
+  com/akah/blocklings/client/gui/control/BaseControl.class
+  com/akah/blocklings/client/gui/control/Control.class
+  com/akah/blocklings/client/gui/control/ControlEventBus.class
+  com/akah/blocklings/client/gui/control/GuiControl.class
+  com/akah/blocklings/client/gui/control/controls/
+  com/akah/blocklings/client/gui/control/controls/BlockControl.class
+  com/akah/blocklings/client/gui/control/controls/ButtonControl.class
+  com/akah/blocklings/client/gui/control/controls/ComboBoxControl$Item.class
+  com/akah/blocklings/client/gui/control/controls/ComboBoxControl$ItemControl$1.class
+  com/akah/blocklings/client/gui/control/controls/ComboBoxControl$ItemControl.class
+  com/akah/blocklings/client/gui/control/controls/ComboBoxControl.class
+  com/akah/blocklings/client/gui/control/controls/EntityControl.class
+  com/akah/blocklings/client/gui/control/controls/EnumeratingControl.class
+  com/akah/blocklings/client/gui/control/controls/IntFieldControl.class
+  com/akah/blocklings/client/gui/control/controls/ItemControl.class
+  com/akah/blocklings/client/gui/control/controls/NullableIntFieldControl.class
+  com/akah/blocklings/client/gui/control/controls/ScreenControl.class
+  com/akah/blocklings/client/gui/control/controls/ScrollbarControl$1.class
+  com/akah/blocklings/client/gui/control/controls/ScrollbarControl.class
+  com/akah/blocklings/client/gui/control/controls/SingleSelectorStrip$OptionControl.class
+  com/akah/blocklings/client/gui/control/controls/SingleSelectorStrip.class
+  com/akah/blocklings/client/gui/control/controls/TabbedUIControl$1.class
+  com/akah/blocklings/client/gui/control/controls/TabbedUIControl$Tab$TabComponent.class
+  com/akah/blocklings/client/gui/control/controls/TabbedUIControl$Tab.class
+  com/akah/blocklings/client/gui/control/controls/TabbedUIControl$TabControl.class
+  com/akah/blocklings/client/gui/control/controls/TabbedUIControl.class
+  com/akah/blocklings/client/gui/control/controls/TextBlockControl.class
+  com/akah/blocklings/client/gui/control/controls/TextFieldControl.class
+  com/akah/blocklings/client/gui/control/controls/TexturedControl.class
+  com/akah/blocklings/client/gui/control/controls/config/
+  com/akah/blocklings/client/gui/control/controls/config/BlockSideSelectionControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/BlockSideSelectionControl$DirectionListChangedEvent.class
+  com/akah/blocklings/client/gui/control/controls/config/BlockSideSelectionControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl$2.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl$3.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl$4.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl$5.class
+  com/akah/blocklings/client/gui/control/controls/config/ContainerControl.class
+  com/akah/blocklings/client/gui/control/controls/config/EntryControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/EntryControl.class
+  com/akah/blocklings/client/gui/control/controls/config/FlatBlockSideSelectionControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/FlatBlockSideSelectionControl$DirectionListChangedEvent.class
+  com/akah/blocklings/client/gui/control/controls/config/FlatBlockSideSelectionControl$FaceCellControl.class
+  com/akah/blocklings/client/gui/control/controls/config/FlatBlockSideSelectionControl.class
+  com/akah/blocklings/client/gui/control/controls/config/FloatRangeControl.class
+  com/akah/blocklings/client/gui/control/controls/config/IntRangeControl.class
+  com/akah/blocklings/client/gui/control/controls/config/InventoryPickerControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemSearchControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemSearchControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$2.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$3.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$4.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$5.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl$6.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl$AdvancedItemInfoControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$AdvancedItemsConfigurationControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$ItemInfoControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$SimpleItemsConfigurationControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl$WhitelistDisplayControl.class
+  com/akah/blocklings/client/gui/control/controls/config/ItemsConfigurationControl.class
+  com/akah/blocklings/client/gui/control/controls/config/PatrolPointControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/PatrolPointControl$2.class
+  com/akah/blocklings/client/gui/control/controls/config/PatrolPointControl$3.class
+  com/akah/blocklings/client/gui/control/controls/config/PatrolPointControl$4.class
+  com/akah/blocklings/client/gui/control/controls/config/PatrolPointControl.class
+  com/akah/blocklings/client/gui/control/controls/config/RangeControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/RangeControl$2.class
+  com/akah/blocklings/client/gui/control/controls/config/RangeControl$3.class
+  com/akah/blocklings/client/gui/control/controls/config/RangeControl.class
+  com/akah/blocklings/client/gui/control/controls/config/WhitelistConfigControl.class
+  com/akah/blocklings/client/gui/control/controls/config/WhitelistItemListControl$1.class
+  com/akah/blocklings/client/gui/control/controls/config/WhitelistItemListControl$GridControl.class
+  com/akah/blocklings/client/gui/control/controls/config/WhitelistItemListControl.class
+  com/akah/blocklings/client/gui/control/controls/panels/
+  com/akah/blocklings/client/gui/control/controls/panels/CanvasPanel.class
+  com/akah/blocklings/client/gui/control/controls/panels/DockPanel.class
+  com/akah/blocklings/client/gui/control/controls/panels/FlowPanel.class
+  com/akah/blocklings/client/gui/control/controls/panels/GridPanel$Definition.class
+  com/akah/blocklings/client/gui/control/controls/panels/GridPanel$GridCell.class
+  com/akah/blocklings/client/gui/control/controls/panels/GridPanel.class
+  com/akah/blocklings/client/gui/control/controls/panels/StackPanel.class
+  com/akah/blocklings/client/gui/control/controls/panels/TabbedPanel$TabContainer.class
+  com/akah/blocklings/client/gui/control/controls/panels/TabbedPanel$TabControl.class
+  com/akah/blocklings/client/gui/control/controls/panels/TabbedPanel.class
+  com/akah/blocklings/client/gui/control/controls/skills/
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$1.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$ConfirmationControl$1.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$ConfirmationControl$2.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$ConfirmationControl.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$Path.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$PathControl.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$1.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$2.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$3.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$4.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$5.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$6.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$7.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl$8.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillControl.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel$SkillsCanvas.class
+  com/akah/blocklings/client/gui/control/controls/skills/SkillsPanel.class
+  com/akah/blocklings/client/gui/control/controls/stats/
+  com/akah/blocklings/client/gui/control/controls/stats/EnumeratingStatControl.class
+  com/akah/blocklings/client/gui/control/controls/stats/HealthBarControl$1.class
+  com/akah/blocklings/client/gui/control/controls/stats/HealthBarControl$2.class
+  com/akah/blocklings/client/gui/control/controls/stats/HealthBarControl$3.class
+  com/akah/blocklings/client/gui/control/controls/stats/HealthBarControl.class
+  com/akah/blocklings/client/gui/control/controls/stats/StatControl.class
+  com/akah/blocklings/client/gui/control/controls/stats/XpBarControl$1.class
+  com/akah/blocklings/client/gui/control/controls/stats/XpBarControl$2.class
+  com/akah/blocklings/client/gui/control/controls/stats/XpBarControl$LevelIconControl.class
+  com/akah/blocklings/client/gui/control/controls/stats/XpBarControl.class
+  com/akah/blocklings/client/gui/control/controls/tasks/
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$1.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$2.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$3.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$4.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$5.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl$6.class
+  com/akah/blocklings/client/gui/control/controls/tasks/TaskControl.class
+  com/akah/blocklings/client/gui/control/event/
+  com/akah/blocklings/client/gui/control/event/events/
+  com/akah/blocklings/client/gui/control/event/events/FocusChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/ItemAddedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/ItemMovedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/ItemRemovedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/ParentChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/PositionChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/ReorderEvent.class
+  com/akah/blocklings/client/gui/control/event/events/SelectionChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/SizeChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/TabChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/TextChangedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/TryDragEvent.class
+  com/akah/blocklings/client/gui/control/event/events/TryHoverEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/
+  com/akah/blocklings/client/gui/control/event/events/input/CharTypedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/KeyPressedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/KeyReleasedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/MouseClickedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/MouseReleasedEvent.class
+  com/akah/blocklings/client/gui/control/event/events/input/MouseScrolledEvent.class
+  com/akah/blocklings/client/gui/properties/
+  com/akah/blocklings/client/gui/properties/Alignment.class
+  com/akah/blocklings/client/gui/properties/Corner.class
+  com/akah/blocklings/client/gui/properties/Direction.class
+  com/akah/blocklings/client/gui/properties/Dock.class
+  com/akah/blocklings/client/gui/properties/Flow.class
+  com/akah/blocklings/client/gui/properties/GridDefinition.class
+  com/akah/blocklings/client/gui/properties/Margin.class
+  com/akah/blocklings/client/gui/properties/Offset.class
+  com/akah/blocklings/client/gui/properties/Orientation.class
+  com/akah/blocklings/client/gui/properties/Padding.class
+  com/akah/blocklings/client/gui/properties/Position.class
+  com/akah/blocklings/client/gui/properties/Scale.class
+  com/akah/blocklings/client/gui/properties/Side.class
+  com/akah/blocklings/client/gui/properties/Size.class
+  com/akah/blocklings/client/gui/properties/Visibility.class
+  com/akah/blocklings/client/gui/screen/
+  com/akah/blocklings/client/gui/screen/BlocklingsAbstractContainerScreen.class
+  com/akah/blocklings/client/gui/screen/BlocklingsScreen.class
+  com/akah/blocklings/client/gui/screen/screens/
+  com/akah/blocklings/client/gui/screen/screens/EquipmentScreen$1.class
+  com/akah/blocklings/client/gui/screen/screens/EquipmentScreen$2.class
+  com/akah/blocklings/client/gui/screen/screens/EquipmentScreen.class
+  com/akah/blocklings/client/gui/screen/screens/SkillsScreen.class
+  com/akah/blocklings/client/gui/screen/screens/StatsScreen$1.class
+  com/akah/blocklings/client/gui/screen/screens/StatsScreen.class
+  com/akah/blocklings/client/gui/screen/screens/TabbedAbstractContainerScreen$1.class
+  com/akah/blocklings/client/gui/screen/screens/TabbedAbstractContainerScreen.class
+  com/akah/blocklings/client/gui/screen/screens/TabbedScreen.class
+  com/akah/blocklings/client/gui/screen/screens/TasksScreen$1.class
+  com/akah/blocklings/client/gui/screen/screens/TasksScreen.class
+  com/akah/blocklings/client/gui/screen/screens/TestScreen.class
+  com/akah/blocklings/client/gui/texture/
+  com/akah/blocklings/client/gui/texture/Texture.class
+  com/akah/blocklings/client/gui/texture/Textures$Common$ComboBox.class
+  com/akah/blocklings/client/gui/texture/Textures$Common$Scrollbar.class
+  com/akah/blocklings/client/gui/texture/Textures$Common$Tab.class
+  com/akah/blocklings/client/gui/texture/Textures$Common.class
+  com/akah/blocklings/client/gui/texture/Textures$Equipment.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$Combat.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$Farming.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$General.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$Mining.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$Tiles.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills$Woodcutting.class
+  com/akah/blocklings/client/gui/texture/Textures$Skills.class
+  com/akah/blocklings/client/gui/texture/Textures$Stats$LevelIconsTexture.class
+  com/akah/blocklings/client/gui/texture/Textures$Stats$StatIconTexture.class
+  com/akah/blocklings/client/gui/texture/Textures$Stats$XpBarTexture.class
+  com/akah/blocklings/client/gui/texture/Textures$Stats.class
+  com/akah/blocklings/client/gui/texture/Textures$Tabs.class
+  com/akah/blocklings/client/gui/texture/Textures$Tasks.class
+  com/akah/blocklings/client/gui/texture/Textures.class
+  com/akah/blocklings/client/gui/util/
+  com/akah/blocklings/client/gui/util/Colour.class
+  com/akah/blocklings/client/gui/util/FullGuiUtil.class
+  com/akah/blocklings/client/gui/util/GuiUtil.class
+  com/akah/blocklings/client/gui/util/ScissorBounds.class
+  com/akah/blocklings/client/gui/util/ScissorStack.class
+  com/akah/blocklings/client/gui/util/TestGuiUtil.class
+  com/akah/blocklings/client/network/
+  com/akah/blocklings/client/network/NetworkClientAccess.class
+  com/akah/blocklings/client/renderer/
+  com/akah/blocklings/client/renderer/entity/
+  com/akah/blocklings/client/renderer/entity/BlocklingRenderer.class
+  com/akah/blocklings/client/renderer/entity/layer/
+  com/akah/blocklings/client/renderer/entity/layer/BlocklingHeldItemLayer.class
+  com/akah/blocklings/client/renderer/entity/model/
+  com/akah/blocklings/client/renderer/entity/model/BlocklingModel.class
+  com/akah/blocklings/command/
+  com/akah/blocklings/command/BlocklingsCommands.class
+  com/akah/blocklings/config/
+  com/akah/blocklings/config/BlocklingsConfig$Client.class
+  com/akah/blocklings/config/BlocklingsConfig$Common.class
+  com/akah/blocklings/config/BlocklingsConfig.class
+  com/akah/blocklings/entity/
+  com/akah/blocklings/entity/BlocklingsEntityTypes.class
+  com/akah/blocklings/entity/EntityGeneration.class
+  com/akah/blocklings/entity/ModEntities.class
+  com/akah/blocklings/entity/blockling/
+  com/akah/blocklings/entity/blockling/BlocklingEntity.class
+  com/akah/blocklings/entity/blockling/BlocklingHand.class
+  com/akah/blocklings/entity/blockling/BlocklingType.class
+  com/akah/blocklings/entity/blockling/action/
+  com/akah/blocklings/entity/blockling/action/Action$Authority.class
+  com/akah/blocklings/entity/blockling/action/Action$CountMessage.class
+  com/akah/blocklings/entity/blockling/action/Action.class
+  com/akah/blocklings/entity/blockling/action/BlocklingActions.class
+  com/akah/blocklings/entity/blockling/action/actions/
+  com/akah/blocklings/entity/blockling/action/actions/AttackAction.class
+  com/akah/blocklings/entity/blockling/action/actions/KnownTargetAction.class
+  com/akah/blocklings/entity/blockling/action/actions/UnknownTargetAction.class
+  com/akah/blocklings/entity/blockling/attribute/
+  com/akah/blocklings/entity/blockling/attribute/Attribute$AttributeComponent.class
+  com/akah/blocklings/entity/blockling/attribute/Attribute$IsEnabledMessage.class
+  com/akah/blocklings/entity/blockling/attribute/Attribute$ValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/Attribute.class
+  com/akah/blocklings/entity/blockling/attribute/BlocklingAttributes$1.class
+  com/akah/blocklings/entity/blockling/attribute/BlocklingAttributes$2.class
+  com/akah/blocklings/entity/blockling/attribute/BlocklingAttributes$Level.class
+  com/akah/blocklings/entity/blockling/attribute/BlocklingAttributes.class
+  com/akah/blocklings/entity/blockling/attribute/IModifiable.class
+  com/akah/blocklings/entity/blockling/attribute/IModifier.class
+  com/akah/blocklings/entity/blockling/attribute/ModifiableAttribute$BaseValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/ModifiableAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/Operation$1.class
+  com/akah/blocklings/entity/blockling/attribute/Operation.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/
+  com/akah/blocklings/entity/blockling/attribute/attributes/EnumAttribute$Message.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/EnumAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/AveragedAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/FloatAttribute$ValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/FloatAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/FloatAttributeModifier.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/IntAttribute$ValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/IntAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/IntAttributeModifier.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableFloatAttribute$BaseValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableFloatAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableFloatAttributeModifier.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableIntAttribute$BaseValueMessage.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableIntAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableIntAttributeModifier.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/ModifiableNumberAttribute.class
+  com/akah/blocklings/entity/blockling/attribute/attributes/numbers/NumberAttribute.class
+  com/akah/blocklings/entity/blockling/goal/
+  com/akah/blocklings/entity/blockling/goal/BlockChunk.class
+  com/akah/blocklings/entity/blockling/goal/BlocklingGoal$State.class
+  com/akah/blocklings/entity/blockling/goal/BlocklingGoal.class
+  com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal$PathTarget.class
+  com/akah/blocklings/entity/blockling/goal/BlocklingPathGoal.class
+  com/akah/blocklings/entity/blockling/goal/BlocklingTargetGoal.class
+  com/akah/blocklings/entity/blockling/goal/config/
+  com/akah/blocklings/entity/blockling/goal/config/ContainerInfo.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/ItemInfo.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/ItemInfoAddedEvent.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/ItemInfoMovedEvent.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/ItemInfoRemovedEvent.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/ItemInfoSetEvent.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$AddItemInfoInfoMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$IOrderedItemInfoSetProvider.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$ItemInfoMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$MoveItemInfoInfoMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$RemoveItemInfoInfoMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet$SetItemInfoInfoMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/iteminfo/OrderedItemInfoSet.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList$AddPatrolPointMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList$IOrderedPatrolPointListProvider.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList$MovePatrolPointMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList$RemovePatrolPointMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList$UpdatePatrolPointMessage.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/OrderedPatrolPointList.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/PatrolPoint.class
+  com/akah/blocklings/entity/blockling/goal/config/patrol/PatrolPointRemovedEvent.class
+  com/akah/blocklings/entity/blockling/goal/config/whitelist/
+  com/akah/blocklings/entity/blockling/goal/config/whitelist/GoalWhitelist.class
+  com/akah/blocklings/entity/blockling/goal/config/whitelist/Whitelist$Type.class
+  com/akah/blocklings/entity/blockling/goal/config/whitelist/Whitelist.class
+  com/akah/blocklings/entity/blockling/goal/goals/
+  com/akah/blocklings/entity/blockling/goal/goals/combat/
+  com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackHuntGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackHurtByGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackOwnerHurtByGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/combat/BlocklingMeleeAttackOwnerHurtGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingContainerGoal$1.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingContainerGoal$ContainerGoalContainerAddRemoveMessage.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingContainerGoal$ContainerGoalContainerMessage.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingContainerGoal$ContainerGoalContainerMoveMessage.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingContainerGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingDepositContainerGoal$1.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingDepositContainerGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/container/BlocklingTakeContainerGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/gather/
+  com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingFarmGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingGatherGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingMineGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/gather/BlocklingWoodcutGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFindBlocklingsGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingFollowGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal$1.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingPatrolGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingSitGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWanderGoal.class
+  com/akah/blocklings/entity/blockling/goal/goals/misc/BlocklingWildPanicGoal.class
+  com/akah/blocklings/entity/blockling/skill/
+  com/akah/blocklings/entity/blockling/skill/BlocklingSkills$Groups.class
+  com/akah/blocklings/entity/blockling/skill/BlocklingSkills.class
+  com/akah/blocklings/entity/blockling/skill/Skill$State.class
+  com/akah/blocklings/entity/blockling/skill/Skill$StateChangedEvent.class
+  com/akah/blocklings/entity/blockling/skill/Skill$Type.class
+  com/akah/blocklings/entity/blockling/skill/Skill.class
+  com/akah/blocklings/entity/blockling/skill/SkillGroup.class
+  com/akah/blocklings/entity/blockling/skill/SkillsConfig.class
+  com/akah/blocklings/entity/blockling/skill/info/
+  com/akah/blocklings/entity/blockling/skill/info/SkillDefaultsInfo.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGeneralInfo$SkillComponent.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGeneralInfo.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGroupInfo.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGuiInfo$ConnectionType.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGuiInfo$SkillIconTexture.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillGuiInfo.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillInfo.class
+  com/akah/blocklings/entity/blockling/skill/info/SkillRequirementsInfo.class
+  com/akah/blocklings/entity/blockling/skill/skills/
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$1.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$10.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$11.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$12.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$13.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$14.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$15.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$16.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$17.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$18.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$19.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$2.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$20.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$21.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$22.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$23.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$24.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$25.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$26.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$27.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$28.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$29.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$3.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$30.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$31.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$4.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$5.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$6.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$7.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$8.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills$9.class
+  com/akah/blocklings/entity/blockling/skill/skills/CombatSkills.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$1.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$10.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$11.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$12.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$13.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$14.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$15.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$16.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$17.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$18.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$19.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$2.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$20.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$21.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$3.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$4.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$5.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$6.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$7.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$8.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills$9.class
+  com/akah/blocklings/entity/blockling/skill/skills/FarmingSkills.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$1.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$10.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$11.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$12.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$13.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$14.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$15.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$16.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$17.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$18.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$19.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$2.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$20.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$21.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$22.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$3.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$4.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$5.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$6.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$7.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$8.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills$9.class
+  com/akah/blocklings/entity/blockling/skill/skills/GeneralSkills.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$1.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$10.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$11.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$12.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$13.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$14.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$15.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$16.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$17.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$18.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$19.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$2.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$3.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$4.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$5.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$6.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$7.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$8.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills$9.class
+  com/akah/blocklings/entity/blockling/skill/skills/MiningSkills.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$1.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$10.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$11.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$12.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$13.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$14.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$15.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$16.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$17.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$18.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$19.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$2.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$20.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$21.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$22.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$23.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$3.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$4.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$5.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$6.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$7.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$8.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills$9.class
+  com/akah/blocklings/entity/blockling/skill/skills/WoodcuttingSkills.class
+  com/akah/blocklings/entity/blockling/task/
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks$1.class
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks$CreateTaskEvent.class
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks$GoalTexture.class
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks$RemoveTaskEvent.class
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks$TaskList.class
+  com/akah/blocklings/entity/blockling/task/BlocklingTasks.class
+  com/akah/blocklings/entity/blockling/task/Task$TypeChangedEvent.class
+  com/akah/blocklings/entity/blockling/task/Task.class
+  com/akah/blocklings/entity/blockling/task/TaskType$GoalComponent.class
+  com/akah/blocklings/entity/blockling/task/TaskType.class
+  com/akah/blocklings/entity/blockling/task/config/
+  com/akah/blocklings/entity/blockling/task/config/ItemConfigurationTypeProperty$1.class
+  com/akah/blocklings/entity/blockling/task/config/ItemConfigurationTypeProperty$Type.class
+  com/akah/blocklings/entity/blockling/task/config/ItemConfigurationTypeProperty.class
+  com/akah/blocklings/entity/blockling/task/config/PatrolTypeProperty$Type.class
+  com/akah/blocklings/entity/blockling/task/config/PatrolTypeProperty.class
+  com/akah/blocklings/entity/blockling/task/config/Property$TaskPropertyMessage.class
+  com/akah/blocklings/entity/blockling/task/config/Property.class
+  com/akah/blocklings/entity/blockling/task/config/TransferModeProperty$Mode.class
+  com/akah/blocklings/entity/blockling/task/config/TransferModeProperty.class
+  com/akah/blocklings/entity/blockling/task/config/range/
+  com/akah/blocklings/entity/blockling/task/config/range/FloatRangeProperty$1.class
+  com/akah/blocklings/entity/blockling/task/config/range/FloatRangeProperty.class
+  com/akah/blocklings/entity/blockling/task/config/range/IntRangeProperty$1.class
+  com/akah/blocklings/entity/blockling/task/config/range/IntRangeProperty.class
+  com/akah/blocklings/entity/blockling/task/config/range/RangeProperty.class
+  com/akah/blocklings/event/
+  com/akah/blocklings/event/ForgeEventBusEvents.class
+  com/akah/blocklings/event/ModEventBusEvents.class
+  com/akah/blocklings/interop/
+  com/akah/blocklings/interop/ActiveTinkersConstructProxy.class
+  com/akah/blocklings/interop/ModProxies.class
+  com/akah/blocklings/interop/ModProxy.class
+  com/akah/blocklings/interop/Proxy.class
+  com/akah/blocklings/interop/TinkersConstructProxy.class
+  com/akah/blocklings/inventory/
+  com/akah/blocklings/inventory/AbstractInventory.class
+  com/akah/blocklings/inventory/EquipmentInventory$SwitchedTools.class
+  com/akah/blocklings/inventory/EquipmentInventory.class
+  com/akah/blocklings/item/
+  com/akah/blocklings/item/BlocklingItem.class
+  com/akah/blocklings/item/BlocklingWhistleItem.class
+  com/akah/blocklings/item/BlocklingsItems.class
+  com/akah/blocklings/item/ModCreativeTabs.class
+  com/akah/blocklings/item/ModItems.class
+  com/akah/blocklings/item/VitalCoreItem.class
+  com/akah/blocklings/network/
+  com/akah/blocklings/network/BlocklingMessage.class
+  com/akah/blocklings/network/Message.class
+  com/akah/blocklings/network/NetworkHandler.class
+  com/akah/blocklings/network/messages/
+  com/akah/blocklings/network/messages/BlocklingAttackTargetMessage.class
+  com/akah/blocklings/network/messages/BlocklingNameMessage.class
+  com/akah/blocklings/network/messages/BlocklingScaleMessage.class
+  com/akah/blocklings/network/messages/BlocklingTypeMessage.class
+  com/akah/blocklings/network/messages/EquipmentInventoryMessage.class
+  com/akah/blocklings/network/messages/GoalMessage.class
+  com/akah/blocklings/network/messages/GoalStateMessage.class
+  com/akah/blocklings/network/messages/SetLevelCommandMessage.class
+  com/akah/blocklings/network/messages/SetTypeCommandMessage.class
+  com/akah/blocklings/network/messages/SetXpCommandMessage.class
+  com/akah/blocklings/network/messages/SkillStateMessage.class
+  com/akah/blocklings/network/messages/SkillTryBuyMessage.class
+  com/akah/blocklings/network/messages/TaskCreateMessage.class
+  com/akah/blocklings/network/messages/TaskCustomNameMessage.class
+  com/akah/blocklings/network/messages/TaskPriorityMessage.class
+  com/akah/blocklings/network/messages/TaskRemoveMessage.class
+  com/akah/blocklings/network/messages/TaskSwapPriorityMessage.class
+  com/akah/blocklings/network/messages/TaskTypeIsUnlockedMessage.class
+  com/akah/blocklings/network/messages/TaskTypeMessage.class
+  com/akah/blocklings/network/messages/WhitelistAllMessage.class
+  com/akah/blocklings/network/messages/WhitelistIsUnlockedMessage.class
+  com/akah/blocklings/network/messages/WhitelistSingleMessage.class
+  com/akah/blocklings/sound/
+  com/akah/blocklings/sound/BlocklingsSounds.class
+  com/akah/blocklings/util/
+  com/akah/blocklings/util/BlockUtil$TreeTuple.class
+  com/akah/blocklings/util/BlockUtil.class
+  com/akah/blocklings/util/BlocklingsComponent.class
+  com/akah/blocklings/util/BlocklingsResourceLocation.class
+  com/akah/blocklings/util/DoubleUtil.class
+  com/akah/blocklings/util/DropUtil$Context.class
+  com/akah/blocklings/util/DropUtil.class
+  com/akah/blocklings/util/EntityUtil.class
+  com/akah/blocklings/util/FriendlyByteBufUtils.class
+  com/akah/blocklings/util/IReadWriteNBT.class
+  com/akah/blocklings/util/ISyncable.class
+  com/akah/blocklings/util/ItemUtil.class
+  com/akah/blocklings/util/ObjectUtil.class
+  com/akah/blocklings/util/PathUtil.class
+  com/akah/blocklings/util/ToolContext.class
+  com/akah/blocklings/util/ToolType$1.class
+  com/akah/blocklings/util/ToolType.class
+  com/akah/blocklings/util/ToolUtil$1.class
+  com/akah/blocklings/util/ToolUtil.class
+  com/akah/blocklings/util/TriFunction.class
+  com/akah/blocklings/util/Version.class
+  com/akah/blocklings/util/WorldUtil$Tree.class
+  com/akah/blocklings/util/WorldUtil.class
+  com/akah/blocklings/util/event/
+  com/akah/blocklings/util/event/CancelableEvent.class
+  com/akah/blocklings/util/event/EntityEvent.class
+  com/akah/blocklings/util/event/EventBus.class
+  com/akah/blocklings/util/event/EventHandler$Handler.class
+  com/akah/blocklings/util/event/EventHandler.class
+  com/akah/blocklings/util/event/HandleableEvent.class
+  com/akah/blocklings/util/event/IEvent.class
+  com/akah/blocklings/util/event/ValueChangedEvent.class
+  data/
+  data/blocklings/
+  data/blocklings/recipes/
+  data/blocklings/recipes/blockling_whistle.json
+  data/blocklings/recipes/vital_core.json
+  pack.mcmeta

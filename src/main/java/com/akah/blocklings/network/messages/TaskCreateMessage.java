@@ -1,0 +1,79 @@
+package com.akah.blocklings.network.messages;
+
+import com.akah.blocklings.entity.blockling.BlocklingEntity;
+import com.akah.blocklings.entity.blockling.task.BlocklingTasks;
+import com.akah.blocklings.network.BlocklingMessage;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.UUID;
+
+public class TaskCreateMessage extends BlocklingMessage<TaskCreateMessage>
+{
+    /**
+     * The task type id.
+     */
+    private UUID taskTypeId;
+
+    /**
+     * The task id, null to create a new task id on the server.
+     */
+    private UUID taskId;
+
+    /**
+     * Empty constructor used ONLY for decoding.
+     */
+    public TaskCreateMessage()
+    {
+        super(null);
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param taskTypeId the task type id.
+     * @param taskId the task id, null tp create a new task id on the server.
+     */
+    public TaskCreateMessage(@Nonnull BlocklingEntity blockling, @Nonnull UUID taskTypeId, @Nullable UUID taskId)
+    {
+        // Don't automatically sync back to clients and handle it manually in the handle method
+        super(blockling, false);
+        this.taskTypeId = taskTypeId;
+        this.taskId = taskId;
+    }
+
+    @Override
+    public void encode(@Nonnull FriendlyByteBuf buf)
+    {
+        super.encode(buf);
+
+        buf.writeUUID(taskTypeId);
+        buf.writeBoolean(taskId != null);
+
+        if (taskId != null)
+        {
+            buf.writeUUID(taskId);
+        }
+    }
+
+    @Override
+    public void decode(@Nonnull FriendlyByteBuf buf)
+    {
+        super.decode(buf);
+
+        taskTypeId = buf.readUUID();
+
+        if (buf.readBoolean())
+        {
+            taskId = buf.readUUID();
+        }
+    }
+
+    @Override
+    protected void handle(@Nonnull Player player, @Nonnull BlocklingEntity blockling)
+    {
+        // Make sure sync back to all the clients, including the one the original message might have come from
+        blockling.getTasks().createTask(BlocklingTasks.getTaskType(taskTypeId), taskId, !blockling.level().isClientSide);
+    }
+}

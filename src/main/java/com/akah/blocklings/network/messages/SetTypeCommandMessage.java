@@ -1,0 +1,95 @@
+package com.akah.blocklings.network.messages;
+
+import com.akah.blocklings.entity.blockling.BlocklingEntity;
+import com.akah.blocklings.entity.blockling.BlocklingType;
+import com.akah.blocklings.network.Message;
+import com.akah.blocklings.util.FriendlyByteBufUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.network.NetworkDirection;
+import net.minecraftforge.network.NetworkEvent;
+
+import javax.annotation.Nonnull;
+import java.util.Objects;
+import java.util.function.Supplier;
+
+public class SetTypeCommandMessage extends Message
+{
+    /**
+     * The type key.
+     */
+    private String type;
+
+    /**
+     * Whether the type being set is the natural type or not.
+     */
+    private boolean natural;
+
+    /**
+     * @param type the type key.
+     * @param natural whether the type being set is the natural type or not.
+     */
+    public SetTypeCommandMessage(@Nonnull String type, boolean natural)
+    {
+        this.type = type;
+        this.natural = natural;
+    }
+
+    /**
+     * Encodes the message.
+     *
+     * @param buf the buffer to encode to.
+     */
+    public void encode(@Nonnull FriendlyByteBuf buf)
+    {
+        FriendlyByteBufUtils.writeString(buf, type);
+        buf.writeBoolean(natural);
+    }
+
+    /**
+     * Decodes and returns the message.
+     *
+     * @param buf the buffer to decode from.
+     */
+    @Nonnull
+    public static SetTypeCommandMessage decode(@Nonnull FriendlyByteBuf buf)
+    {
+        return new SetTypeCommandMessage(FriendlyByteBufUtils.readString(buf), buf.readBoolean());
+    }
+
+    @Override
+    public void handle(Supplier<NetworkEvent.Context> ctx)
+    {
+        NetworkEvent.Context context = ctx.get();
+
+        context.enqueueWork(() ->
+        {
+            boolean isClient = context.getDirection() == NetworkDirection.PLAY_TO_CLIENT;
+
+            Player player = isClient ? getClientPlayer() : context.getSender();
+            Objects.requireNonNull(player, "No player entity found when handling message.");
+
+            if (isClient)
+            {
+                Entity entity = Minecraft.getInstance().crosshairPickEntity;
+
+                if (entity instanceof BlocklingEntity)
+                {
+                    BlocklingEntity blockling = (BlocklingEntity) entity;
+
+                    if (natural)
+                    {
+                        blockling.setNaturalBlocklingType(BlocklingType.find(type));
+                    }
+                    else
+                    {
+                        blockling.setBlocklingType(BlocklingType.find(type));
+                    }
+                }
+            }
+        });
+        context.setPacketHandled(true);
+    }
+}

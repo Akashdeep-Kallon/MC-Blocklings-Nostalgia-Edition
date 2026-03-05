@@ -1,0 +1,86 @@
+package com.akah.blocklings.network.messages;
+
+import com.akah.blocklings.entity.blockling.BlocklingEntity;
+import com.akah.blocklings.network.BlocklingMessage;
+import com.akah.blocklings.util.FriendlyByteBufUtils;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+
+import javax.annotation.Nonnull;
+import java.util.UUID;
+
+public class WhitelistSingleMessage extends BlocklingMessage<WhitelistSingleMessage>
+{
+    /**
+     * The associated task id.
+     */
+    private UUID taskId;
+
+    /**
+     * The whitelist id.
+     */
+    private int whitelistId;
+
+    /**
+     * The entry to set value of.
+     */
+    private ResourceLocation entry;
+
+    /**
+     * Whether the entry is whitelisted.
+     */
+    private boolean value;
+
+    /**
+     * Empty constructor used ONLY for decoding.
+     */
+    public WhitelistSingleMessage()
+    {
+        super(null);
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param taskId the associated task id.
+     * @param whitelistId the whitelist id.
+     * @param entry the entry to set the value of.
+     * @param value whether the entry is whitelisted.
+     */
+    public WhitelistSingleMessage(@Nonnull BlocklingEntity blockling, @Nonnull UUID taskId, int whitelistId, @Nonnull ResourceLocation entry, boolean value)
+    {
+        super(blockling);
+        this.taskId = taskId;
+        this.whitelistId = whitelistId;
+        this.entry = entry;
+        this.value = value;
+    }
+
+    @Override
+    public void encode(@Nonnull FriendlyByteBuf buf)
+    {
+        super.encode(buf);
+
+        buf.writeUUID(taskId);
+        buf.writeInt(whitelistId);
+        FriendlyByteBufUtils.writeString(buf, entry.toString());
+        buf.writeBoolean(value);
+    }
+
+    @Override
+    public void decode(@Nonnull FriendlyByteBuf buf)
+    {
+        super.decode(buf);
+
+        taskId = buf.readUUID();
+        whitelistId = buf.readInt();
+        entry = ResourceLocation.parse(FriendlyByteBufUtils.readString(buf));
+        value = buf.readBoolean();
+    }
+
+    @Override
+    protected void handle(@Nonnull Player player, @Nonnull BlocklingEntity blockling)
+    {
+        blockling.getTasks().getTask(taskId).getGoal().whitelists.get(whitelistId).addOrSetEntry(entry, value, false);
+    }
+}

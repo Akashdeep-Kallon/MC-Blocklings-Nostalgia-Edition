@@ -1,0 +1,644 @@
+package com.akah.blocklings.entity.blockling;
+
+import com.akah.blocklings.config.BlocklingsConfig;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
+import com.akah.blocklings.util.BlocklingsComponent;
+import com.akah.blocklings.util.ItemUtil;
+import com.akah.blocklings.util.Version;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+
+import javax.annotation.Nonnull;
+import java.util.*;
+import java.util.function.BiPredicate;
+import java.util.stream.Collectors;
+
+/**
+ * The blockling type contains properties used to determine textures, spawning and stats.
+ *
+ * NOTE: If the key of anything type changes it must be reflected in the find method using the version.
+ */
+public class BlocklingType
+{
+    /**
+     * The list of all available blockling types.
+     */
+    public static final List<BlocklingType> TYPES = new ArrayList<>();
+
+    public static final BlocklingType GRASS = create("grass").addCombatStats(2.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.0f, 1.0f, 2.0f);
+    public static final BlocklingType DIRT = create("dirt").addCombatStats(2.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.0f, 1.0f, 2.0f);
+    public static final BlocklingType OAK_LOG = create("oak_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType BIRCH_LOG = create("birch_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType SPRUCE_LOG = create("spruce_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType JUNGLE_LOG = create("jungle_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType DARK_OAK_LOG = create("dark_oak_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType ACACIA_LOG = create("acacia_log").addCombatStats(3.0f, 1.0f, 1.5f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(0.5f, 2.0f, 1.0f);
+    public static final BlocklingType STONE = create("stone").addCombatStats(5.0f, 1.0f, 1.0f, 2.0f, 1.0f, 0.3f, 2.5f).addGatheringStats(1.5f, 0.5f, 0.5f);
+    public static final BlocklingType IRON = create("iron").addCombatStats(6.0f, 2.0f, 1.0f, 2.0f, 1.0f, 0.1f, 3.0f).addGatheringStats(2.0f, 0.5f, 0.5f);
+    public static final BlocklingType QUARTZ = create("quartz").addCombatStats(3.0f, 4.0f, 2.0f, 1.0f, 0.5f, 0.1f, 3.5f).addGatheringStats(2.0f, 0.5f, 0.5f);
+    public static final BlocklingType LAPIS = create("lapis").addCombatStats(5.0f, 3.0f, 1.5f, 1.0f, 0.5f, 0.1f, 3.0f).addGatheringStats(2.0f, 0.5f, 0.5f);
+    public static final BlocklingType GOLD = create("gold").addCombatStats(1.0f, 4.0f, 2.5f, 1.0f, 0.5f, 0.1f, 4.0f).addGatheringStats(2.5f, 0.5f, 0.5f);
+    public static final BlocklingType EMERALD = create("emerald").addCombatStats(5.0f, 3.0f, 1.5f, 2.0f, 1.0f, 0.2f, 3.0f).addGatheringStats(2.5f, 0.5f, 0.5f);
+    public static final BlocklingType DIAMOND = create("diamond").addCombatStats(8.0f, 6.0f, 2.0f, 3.0f, 1.5f, 0.2f, 3.0f).addGatheringStats(3.0f, 0.5f, 0.5f);
+    public static final BlocklingType NETHERITE = create("netherite").addCombatStats(15.0f, 7.0f, 2.0f, 4.0f, 2.0f, 0.3f, 2.5f).addGatheringStats(2.5f, 1.0f, 1.0f);
+    public static final BlocklingType OBSIDIAN = create("obsidian").addCombatStats(25.0f, 5.0f, 1.0f, 4.0f, 2.0f, 0.8f, 2.0f).addGatheringStats(1.0f, 0.5f, 0.5f);
+    public static final BlocklingType GLOWSTONE = create("glowstone").addCombatStats(2.0f, 2.0f, 2.0f, 0.0f, 0.0f, 0.0f, 3.0f).addGatheringStats(1.0f, 1.0f, 1.0f);
+
+    /**
+     * Initialises the spawn predicates and foods for each blockling type.
+     *
+     * Spawn predicates are no longer used for natural world spawning (disabled).
+     * They are still used by finalizeSpawn() to select an environment-appropriate
+     * type when a blockling is created via spawn egg, /summon, or spawner.
+     */
+    public static void init()
+    {
+        FOODS.clear();
+        TYPES.forEach(blocklingType -> { blocklingType.spawnPredicates.clear(); blocklingType.foods.clear(); });
+
+        GRASS.addFoods(Blocks.GRASS_BLOCK);
+        GRASS.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        GRASS.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        GRASS.spawnPredicates.add((blockling, world) -> canSeeSky(blockling, world));
+
+        DIRT.addFoods(Blocks.DIRT);
+        DIRT.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        DIRT.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        DIRT.spawnPredicates.add((blockling, world) -> canSeeSky(blockling, world));
+
+        OAK_LOG.addFoods(Blocks.OAK_LOG);
+        OAK_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        OAK_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        OAK_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.OAK_LOG));
+
+        BIRCH_LOG.addFoods(Blocks.BIRCH_LOG);
+        BIRCH_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        BIRCH_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        BIRCH_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.BIRCH_LOG));
+
+        SPRUCE_LOG.addFoods(Blocks.SPRUCE_LOG);
+        SPRUCE_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        SPRUCE_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        SPRUCE_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.SPRUCE_LOG));
+
+        JUNGLE_LOG.addFoods(Blocks.JUNGLE_LOG);
+        JUNGLE_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        JUNGLE_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        JUNGLE_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.JUNGLE_LOG));
+
+        DARK_OAK_LOG.addFoods(Blocks.DARK_OAK_LOG);
+        DARK_OAK_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        DARK_OAK_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        DARK_OAK_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.DARK_OAK_LOG));
+
+        ACACIA_LOG.addFoods(Blocks.ACACIA_LOG);
+        ACACIA_LOG.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        ACACIA_LOG.spawnPredicates.add((blockling, world) -> blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        ACACIA_LOG.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.ACACIA_LOG));
+
+        STONE.addFoods(Blocks.STONE);
+        STONE.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        STONE.spawnPredicates.add((blockling, world) -> !blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        // CORRECCIÓN: En 1.20.1 las cuevas bajo Y=0 usan Deepslate en lugar de Stone.
+        // Sin estas variantes el blockling de piedra NUNCA spawneaba en cuevas profundas.
+        STONE.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 4,
+                Blocks.STONE, Blocks.DEEPSLATE, Blocks.COBBLED_DEEPSLATE));
+
+        IRON.addFoods(Items.IRON_INGOT);
+        IRON.addFoods(Blocks.IRON_ORE, Blocks.IRON_BLOCK);
+        IRON.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        IRON.spawnPredicates.add((blockling, world) -> !blockBelowIs(blockling, world, Blocks.GRASS_BLOCK));
+        // CORRECCIÓN: En 1.20.1 el hierro genera como DEEPSLATE_IRON_ORE bajo Y≈8.
+        // Sin esto el blockling de hierro nunca spawneaba en cuevas profundas.
+        IRON.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 6,
+                Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE));
+
+        QUARTZ.addFoods(Items.QUARTZ);
+        QUARTZ.addFoods(Blocks.NETHER_QUARTZ_ORE, Blocks.QUARTZ_BLOCK);
+        QUARTZ.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.NETHER));
+        QUARTZ.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 8, Blocks.NETHER_QUARTZ_ORE));
+
+        LAPIS.addFoods(Items.LAPIS_LAZULI);
+        LAPIS.addFoods(Blocks.LAPIS_ORE, Blocks.LAPIS_BLOCK);
+        LAPIS.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        // CORRECCIÓN: En 1.20.1 el lapislázuli genera como DEEPSLATE_LAPIS_ORE bajo Y≈0.
+        LAPIS.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 12,
+                Blocks.LAPIS_ORE, Blocks.DEEPSLATE_LAPIS_ORE));
+
+        GOLD.addFoods(Items.GOLD_INGOT);
+        GOLD.addFoods(Blocks.GOLD_ORE, Blocks.GOLD_BLOCK);
+        GOLD.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        // CORRECCIÓN: En 1.20.1 el oro genera como DEEPSLATE_GOLD_ORE en cuevas profundas.
+        // También añadido NETHER_GOLD_ORE para cuando los blocklings de oro se usen en el Nether.
+        GOLD.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 12,
+                Blocks.GOLD_ORE, Blocks.DEEPSLATE_GOLD_ORE, Blocks.NETHER_GOLD_ORE));
+
+        EMERALD.addFoods(Items.EMERALD);
+        EMERALD.addFoods(Blocks.EMERALD_ORE, Blocks.EMERALD_BLOCK);
+        EMERALD.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        // CORRECCIÓN: En 1.20.1 las esmeraldas generan como DEEPSLATE_EMERALD_ORE
+        // en las montañas bajo Y≈0.
+        EMERALD.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 16,
+                Blocks.EMERALD_ORE, Blocks.DEEPSLATE_EMERALD_ORE));
+
+        DIAMOND.addFoods(Items.DIAMOND);
+        DIAMOND.addFoods(Blocks.DIAMOND_ORE, Blocks.DIAMOND_BLOCK);
+        DIAMOND.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        // CORRECCIÓN CRÍTICA: En 1.20.1 casi todos los diamantes generan como
+        // DEEPSLATE_DIAMOND_ORE (Y < -58 aprox). Sin esta variante el blockling de
+        // diamante prácticamente NUNCA spawneaba.
+        DIAMOND.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 12,
+                Blocks.DIAMOND_ORE, Blocks.DEEPSLATE_DIAMOND_ORE));
+
+        NETHERITE.addFoods(Items.NETHERITE_SCRAP, Items.NETHERITE_INGOT);
+        NETHERITE.addFoods(Blocks.ANCIENT_DEBRIS, Blocks.NETHERITE_BLOCK);
+        NETHERITE.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.NETHER));
+        NETHERITE.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 12, Blocks.ANCIENT_DEBRIS));
+
+        OBSIDIAN.addFoods(Blocks.OBSIDIAN);
+        OBSIDIAN.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.OVERWORLD));
+        OBSIDIAN.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 16, Blocks.OBSIDIAN));
+
+        GLOWSTONE.addFoods(Items.GLOWSTONE_DUST);
+        GLOWSTONE.addFoods(Blocks.GLOWSTONE);
+        GLOWSTONE.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.NETHER));
+        GLOWSTONE.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 16, Blocks.GLOWSTONE));
+    }
+
+    /**
+     * The list of all items that are treated as foods.
+     */
+    @Nonnull
+    private static final Set<Item> FOODS = new HashSet<>();
+
+    /**
+     * The key used to identify the blockling type (for things like translation text components).
+     */
+    @Nonnull
+    public final String key;
+
+    /**
+     * The standard texture for the blockling type.
+     */
+    @Nonnull
+    public final ResourceLocation entityTexture;
+
+    /**
+     * The translation text component for the blockling type's name.
+     */
+    @Nonnull
+    public final Component name;
+
+
+    /**
+     * The bonus max health the blockling type gives.
+     */
+    private float maxHealth = 0.0f;
+
+    /**
+     * The bonus attack damage the blockling type gives.
+     */
+    private float attackDamage = 0.0f;
+
+    /**
+     * The bonus attack speed the blockling type gives.
+     */
+    private float attackSpeed = 3.0f;
+
+    /**
+     * The bonus armour the blockling type gives.
+     */
+    private float armour = 0.0f;
+
+    /**
+     * The bonus armour toughness the blockling type gives.
+     */
+    private float armourToughness = 0.0f;
+
+    /**
+     * The bonus knockback resistance the blockling type gives.
+     */
+    private float knockbackResistance = 0.0f;
+
+    /**
+     * The bonus move speed the blockling type gives.
+     */
+    private float moveSpeed = 0.0f;
+
+    /**
+     * The bonus mining speed the blockling type gives.
+     */
+    private float miningSpeed = 0.0f;
+
+    /**
+     * The bonus woodcutting speed the blockling type gives.
+     */
+    private float woodcuttingSpeed = 0.0f;
+
+    /**
+     * The bonus farming speed the blockling type gives.
+     */
+    private float farmingSpeed = 0.0f;
+
+    /**
+     * The foods for the blockling type.
+     */
+    @Nonnull
+    public final Set<Item> foods = new HashSet<>();
+
+    /**
+     * The list of predicates that need to be met for a blockling to spawn with for the blockling type.
+     */
+    @Nonnull
+    public final List<BiPredicate<BlocklingEntity, LevelAccessor>> spawnPredicates = new ArrayList<>();
+
+    /**
+     * @param key the key used to identify the blockling type (for things like translation text components).
+     */
+    public BlocklingType(@Nonnull String key)
+    {
+        this.key = key;
+        this.entityTexture = new BlocklingsResourceLocation("textures/entity/blockling/blockling_" + key + ".png");
+        this.name = new BlocklingsComponent("type." + key);
+    }
+
+    /**
+     * Creates and adds a new blockling type to the list of blockling types.
+     *
+     * @param key the key used to identify the blockling type (for things like translation text components).
+     * @return the instance of the blockling type.
+     */
+    @Nonnull
+    private static BlocklingType create(@Nonnull String key)
+    {
+        BlocklingType type = new BlocklingType(key);
+        TYPES.add(type);
+        return type;
+    }
+
+    /**
+     * @param key the key used to identify the blockling type.
+     * @return the blockling type with the given key, or grass if it does not exist.
+     */
+    @Nonnull
+    public static BlocklingType find(@Nonnull String key)
+    {
+        return TYPES.stream().filter(type -> type.key.equals(key)).findFirst().orElse(BlocklingType.GRASS);
+    }
+
+    /**
+     * @param key the key used to identify the blockling type.
+     * @param version the version of the mod to use the key for.
+     * @return the blockling type with the given key, or grass if it does not exist.
+     */
+    @Nonnull
+    public static BlocklingType find(@Nonnull String key, @Nonnull Version version)
+    {
+        return find(key);
+    }
+
+    /**
+     * Sets the combat stats for the blockling type.
+     *
+     * @param maxHealth the bonus max health the blockling type gives.
+     * @param attackDamage the bonus attack damage health the blockling type gives.
+     * @param attackSpeed the bonus attack speed health the blockling type gives.
+     * @param armour the bonus armour the blockling type gives.
+     * @param armourToughness the bonus armour toughness health the blockling type gives.
+     * @param knockbackResistance the bonus knockback resistance health the blockling type gives.
+     * @param moveSpeed the bonus move speed the blockling type gives.
+     */
+    @Nonnull
+    private BlocklingType addCombatStats(float maxHealth, float attackDamage, float attackSpeed, float armour, float armourToughness, float knockbackResistance, float moveSpeed)
+    {
+        this.maxHealth = maxHealth;
+        this.attackDamage = attackDamage;
+        this.attackSpeed = attackSpeed;
+        this.armour = armour;
+        this.armourToughness = armourToughness;
+        this.knockbackResistance = knockbackResistance;
+        this.moveSpeed = moveSpeed;
+
+        return this;
+    }
+
+    /**
+     * Sets the gathering stats for the blockling type.
+     *
+     * @param miningSpeed the bonus mining speed the blockling type gives.
+     * @param woodcuttingSpeed the bonus woodcutting speed the blockling type gives.
+     * @param farmingSpeed the bonus farming speed the blockling type gives.
+     */
+    @Nonnull
+    private BlocklingType addGatheringStats(float miningSpeed, float woodcuttingSpeed, float farmingSpeed)
+    {
+        this.miningSpeed = miningSpeed;
+        this.woodcuttingSpeed = woodcuttingSpeed;
+        this.farmingSpeed = farmingSpeed;
+
+        return this;
+    }
+
+    /**
+     * @param blocklingType the blockling type.
+     * @param variant the variant.
+     * @return the resource location for the combined texture (returns the regular type texture if the option is disabled in the config).
+     */
+    @OnlyIn(Dist.CLIENT)
+    @Nonnull
+    public ResourceLocation getCombinedTexture(@Nonnull BlocklingType blocklingType, int variant)
+    {
+        if (BlocklingsConfig.CLIENT.disableDirtyBlocklings.get())
+        {
+            return blocklingType.entityTexture;
+        }
+
+        return new BlocklingsResourceLocation("textures/entity/blockling/blockling_" + key + "_merged_with_" + blocklingType.key + "_" + variant);
+    }
+
+    /**
+     * @return the bonus max health the blockling type gives.
+     */
+    public float getMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    /**
+     * @return the bonus attack damage the blockling type gives.
+     */
+    public float getAttackDamage()
+    {
+        return attackDamage;
+    }
+
+    /**
+     * @return the bonus armour the blockling type gives.
+     */
+    public float getArmour()
+    {
+        return armour;
+    }
+
+    /**
+     * @return the bonus move speed the blockling type gives.
+     */
+    public float getMoveSpeed()
+    {
+        return moveSpeed;
+    }
+
+    /**
+     * @return the bonus attack speed the blockling type gives.
+     */
+    public float getAttackSpeed()
+    {
+        return attackSpeed;
+    }
+
+    /**
+     * @return the bonus armour toughness the blockling type gives.
+     */
+    public float getArmourToughness()
+    {
+        return armourToughness;
+    }
+
+    /**
+     * @return the bonus knockback resistance the blockling type gives.
+     */
+    public float getKnockbackResistance()
+    {
+        return knockbackResistance;
+    }
+
+    /**
+     * @return the bonus mining speed the blockling type gives.
+     */
+    public float getMiningSpeed()
+    {
+        return miningSpeed;
+    }
+
+    /**
+     * @return the bonus woodcutting speed the blockling type gives.
+     */
+    public float getWoodcuttingSpeed()
+    {
+        return woodcuttingSpeed;
+    }
+
+    /**
+     * @return the bonus farming speed the blockling type gives.
+     */
+    public float getFarmingSpeed()
+    {
+        return farmingSpeed;
+    }
+
+    /**
+     * @param stack the food stack.
+     * @return the blockling type that eats the given food.
+     */
+    @Nonnull
+    public static BlocklingType findTypeForFood(@Nonnull ItemStack stack)
+    {
+        return findTypeForFood(stack.getItem());
+    }
+
+    /**
+     * @param item the food item.
+     * @return the blockling type that eats the given food.
+     */
+    @Nonnull
+    public static BlocklingType findTypeForFood(@Nonnull Item item)
+    {
+        return Objects.requireNonNull(TYPES.stream().filter(blocklingType -> blocklingType.isFoodForType(item)).findFirst().orElse(null));
+    }
+
+    /**
+     * @param stack the stack to check.
+     * @return true if the stack is food.
+     */
+    public static boolean isFood(@Nonnull ItemStack stack)
+    {
+        return isFood(stack.getItem());
+    }
+
+    /**
+     * @param item the item to check.
+     * @return true if the item is food.
+     */
+    public static boolean isFood(@Nonnull Item item)
+    {
+        return ItemUtil.isFlower(item) || FOODS.contains(item);
+    }
+
+    /**
+     * @param stack the stack to check.
+     * @return true if the stack is food for this blockling type.
+     */
+    public boolean isFoodForType(@Nonnull ItemStack stack)
+    {
+        return isFoodForType(stack.getItem());
+    }
+
+    /**
+     * @param item the item to check.
+     * @return true if the item is food for this blockling type.
+     */
+    public boolean isFoodForType(Item item)
+    {
+        return ItemUtil.isFlower(item) || foods.contains(item);
+    }
+
+    /**
+     * Adds the given items as foods to blockling type.
+     *
+     * @param items the items to add as foods.
+     */
+    private void addFoods(@Nonnull Item... items)
+    {
+        FOODS.addAll(Arrays.asList(items));
+        foods.addAll(Arrays.asList(items));
+    }
+
+    /**
+     * Adds the given blocks as foods to blockling type.
+     *
+     * @param blocks the blocks to add as foods.
+     */
+    private void addFoods(@Nonnull Block... blocks)
+    {
+        FOODS.addAll(Arrays.stream(blocks).map(Item.BY_BLOCK::get).collect(Collectors.toList()));
+        foods.addAll(Arrays.stream(blocks).map(Item.BY_BLOCK::get).collect(Collectors.toList()));
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param world the world the blockling is in.
+     * @param worldTypes the dimensions to check for.
+     * @return true if the blockling is one of the given dimensions.
+     */
+    @SafeVarargs
+    private static boolean isInWorld(@Nonnull BlocklingEntity blockling, @Nonnull LevelAccessor world, @Nonnull ResourceKey<Level>... worldTypes)
+    {
+        for (ResourceKey<Level> worldType : worldTypes)
+        {
+            if (blockling.level().dimension() == worldType)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param world the world the blockling is in.
+     * @param biomes the biomes to check for.
+     * @return true if the blockling is one of the given biomes.
+     */
+    @SafeVarargs
+    private static boolean isInBiome(@Nonnull BlocklingEntity blockling, @Nonnull LevelAccessor world, @Nonnull ResourceKey<Biome>... biomes)
+    {
+        for (ResourceKey<Biome> biome : biomes)
+        {
+            if (world.getBiome(blockling.blockPosition()).is(biome))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param world the world the blockling is in.
+     * @return true if the blockling can see the sky.
+     */
+    private static boolean canSeeSky(@Nonnull BlocklingEntity blockling, @Nonnull LevelAccessor world)
+    {
+        return world.canSeeSky(blockling.blockPosition());
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param world the world the blockling is in.
+     * @param blocks the blocks to check for.
+     * @return true if the blockling is on one of the given blocks.
+     */
+    private static boolean blockBelowIs(@Nonnull BlocklingEntity blockling, @Nonnull LevelAccessor world, @Nonnull Block... blocks)
+    {
+        Block testBlock = world.getBlockState(blockling.blockPosition().below()).getBlock();
+
+        for (Block block : blocks)
+        {
+            if (testBlock == block)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @param blockling the blockling.
+     * @param world the world the blockling is in.
+     * @param radius the (cube) radius to search in.
+     * @param blocks the blocks to check for.
+     * @return true if the blockling is near one of the given blocks.
+     */
+    private static boolean blockNearbyIs(@Nonnull BlocklingEntity blockling, @Nonnull LevelAccessor world, int radius, @Nonnull Block... blocks)
+    {
+        int startX = (int) blockling.getX() - radius;
+        int startY = (int) blockling.getY() - radius;
+        int startZ = (int) blockling.getZ() - radius;
+
+        int endX = (int) blockling.getX() + radius;
+        int endY = (int) blockling.getY() + radius;
+        int endZ = (int) blockling.getZ() + radius;
+
+        for (int x = startX; x <= endX; x++)
+        {
+            for (int y = startY; y <= endY; y++)
+            {
+                for (int z = startZ; z <= endZ; z++)
+                {
+                    BlockPos blockPos = new BlockPos(x, y, z);
+
+                    if (!world.isAreaLoaded(blockPos, 1))
+                    {
+                        continue;
+                    }
+
+                    Block block = world.getBlockState(blockPos).getBlock();
+
+                    for (Block block2 : blocks)
+                    {
+                        if (block == block2)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+
+        return false;
+    }
+}

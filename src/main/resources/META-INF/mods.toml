@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+modId="blocklings"
+version="${mod_version}"
+displayName="Blocklings: Nostalgia Edition"
+displayURL="https://github.com/Akashdeep-Kallon/MC-Blocklings-Nostalgia-Edition"
+logoFile="blocklings.png"
+credits="willr27, AkaH"
+authors="AkaH"
+description='''
+Blocklings adds loyal, block-shaped companions to your world. Tame and level them up, assign jobs, and let them help with combat, mining, woodcutting, farming, and item transport while you explore.
+'''
+
+[[dependencies.blocklings]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4.10,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.blocklings]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
