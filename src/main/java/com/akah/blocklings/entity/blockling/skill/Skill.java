@@ -1,7 +1,7 @@
 package com.akah.blocklings.entity.blockling.skill;
 
 import com.akah.blocklings.client.gui.texture.Texture;
-import com.akah.blocklings.client.gui.texture.Textures;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
 import com.akah.blocklings.entity.blockling.BlocklingEntity;
 import com.akah.blocklings.entity.blockling.skill.info.SkillInfo;
 import com.akah.blocklings.network.messages.SkillStateMessage;
@@ -260,7 +260,7 @@ public class Skill
          */
         Type(int textureX)
         {
-            this.texture = new Texture(Textures.Skills.SKILLS, textureX * 24, 217, 24, 24);
+            this.texture = new Texture(new BlocklingsResourceLocation("textures/gui/skills.png"), textureX * 24, 217, 24, 24);
         }
     }
 

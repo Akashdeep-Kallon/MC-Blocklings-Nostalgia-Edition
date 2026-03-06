@@ -167,8 +167,10 @@ public abstract class BlocklingGoal extends Goal
      */
     @Nonnull
     @OnlyIn(Dist.CLIENT)
-    public void addConfigTabControls(@Nonnull TabbedPanel tabbedPanel)
+    public void addConfigTabControls(@Nonnull Object tabbedPanelObj)
     {
+        TabbedPanel tabbedPanel = (TabbedPanel) tabbedPanelObj;
+
         for (GoalWhitelist whitelist : whitelists)
         {
             if (whitelist.isUnlocked())

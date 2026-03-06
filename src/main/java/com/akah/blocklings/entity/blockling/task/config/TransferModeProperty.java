@@ -11,6 +11,8 @@ import com.akah.blocklings.util.event.IEvent;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -63,13 +65,15 @@ public class TransferModeProperty extends Property
 
     @Nonnull
     @Override
-    public BaseControl createControl()
+    @OnlyIn(Dist.CLIENT)
+    public Object createControl()
     {
         return createControl(Arrays.asList(Mode.values()));
     }
 
     @Nonnull
-    public BaseControl createControl(@Nonnull List<Mode> options)
+    @OnlyIn(Dist.CLIENT)
+    public Object createControl(@Nonnull List<Mode> options)
     {
         SingleSelectorStrip<Mode> selector = new SingleSelectorStrip<>();
         selector.setOptions(options);

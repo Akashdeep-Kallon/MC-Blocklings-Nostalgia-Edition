@@ -35,6 +35,7 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -461,6 +462,44 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
     public @Nonnull net.minecraft.network.protocol.Packet<net.minecraft.network.protocol.game.ClientGamePacketListener> getAddEntityPacket()
     {
         return NetworkHooks.getEntitySpawningPacket(this);
+    }
+
+    @Override
+    @Nullable
+    public LivingEntity getOwner()
+    {
+        UUID ownerUUID = getOwnerUUID();
+
+        if (ownerUUID == null)
+        {
+            return null;
+        }
+
+        if (level() instanceof ServerLevel)
+        {
+            MinecraftServer server = ((ServerLevel) level()).getServer();
+
+            if (server != null)
+            {
+                for (ServerLevel serverLevel : server.getAllLevels())
+                {
+                    Entity entity = serverLevel.getPlayerByUUID(ownerUUID);
+
+                    if (entity instanceof LivingEntity)
+                    {
+                        return (LivingEntity) entity;
+                    }
+                }
+            }
+        }
+
+        return super.getOwner();
+    }
+
+    private boolean isOwner(@Nonnull Player player)
+    {
+        UUID ownerUUID = getOwnerUUID();
+        return ownerUUID != null && ownerUUID.equals(player.getUUID());
     }
 
     @Override
@@ -1103,7 +1142,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
 
         if (item == BLOCKLING_WHISTLE.get())
         {
-            if (player == getOwner())
+            if (isOwner(player))
             {
                 BlocklingWhistleItem.setBlockling(stack, this);
 
@@ -1129,7 +1168,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
                 {
                     if (hasPlayerResetCrouchBetweenInteractions && skills.getSkill(GeneralSkills.PACKLING).isBought())
                     {
-                        if (player == getOwner())
+                        if (isOwner(player))
                         {
                             if (player.isCrouching())
                             {
@@ -1175,7 +1214,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
         }
         else if (BlocklingType.isFood(item))
         {
-            if (player == getOwner() && player.isCrouching())
+            if (isOwner(player) && player.isCrouching())
             {
                 if (!level().isClientSide())
                 {
@@ -1200,7 +1239,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
             }
         }
 
-        if (isTame() && player == getOwner())
+        if (isTame() && isOwner(player))
         {
 //            if (item != Items.EXPERIENCE_BOTTLE && (!BlocklingType.isFood(item) || !player.isCrouching()) && (!blocklingType.isFoodForType(item) || getHealth() >= getMaxHealth()))
 //            {

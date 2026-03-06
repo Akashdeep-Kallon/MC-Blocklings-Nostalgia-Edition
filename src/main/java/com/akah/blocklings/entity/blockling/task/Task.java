@@ -43,7 +43,7 @@ public class Task
      * The task's type.
      */
     @Nonnull
-    private TaskType type;
+    private TaskType type = BlocklingTasks.NULL;
 
     /**
      * The task's custom name.
@@ -77,7 +77,7 @@ public class Task
      */
     public boolean isConfigured()
     {
-        return type != BlocklingTasks.NULL;
+        return type != null && type != BlocklingTasks.NULL && goal != null;
     }
 
     /**

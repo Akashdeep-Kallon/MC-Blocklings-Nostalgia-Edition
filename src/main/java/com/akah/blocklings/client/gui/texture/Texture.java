@@ -1,15 +1,12 @@
 package com.akah.blocklings.client.gui.texture;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 
 /**
  * A {@link ResourceLocation} based gui texture.
  */
-@OnlyIn(Dist.CLIENT)
 public class Texture
 {
     /**
