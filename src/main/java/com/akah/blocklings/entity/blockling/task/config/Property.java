@@ -1,6 +1,5 @@
 package com.akah.blocklings.entity.blockling.task.config;
 
-import com.akah.blocklings.client.gui.control.BaseControl;
 import com.akah.blocklings.entity.blockling.BlocklingEntity;
 import com.akah.blocklings.entity.blockling.goal.BlocklingGoal;
 import com.akah.blocklings.entity.blockling.task.Task;
@@ -56,7 +55,7 @@ public abstract class Property implements IReadWriteNBT {
 
     @OnlyIn(Dist.CLIENT)
     @Nonnull
-    public abstract BaseControl createControl();
+    public abstract Object createControl();
 
     public static class TaskPropertyMessage extends BlocklingMessage<TaskPropertyMessage> {
         @Nullable private FriendlyByteBuf buf;

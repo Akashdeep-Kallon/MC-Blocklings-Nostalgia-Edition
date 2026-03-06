@@ -1,6 +1,6 @@
 package com.akah.blocklings.entity.blockling.skill.skills;
 
-import com.akah.blocklings.client.gui.texture.Textures;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
 import com.akah.blocklings.entity.blockling.attribute.BlocklingAttributes;
 import com.akah.blocklings.entity.blockling.goal.goals.container.BlocklingContainerGoal;
 import com.akah.blocklings.entity.blockling.task.config.TransferModeProperty;
@@ -26,19 +26,19 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "general.heal"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 10); }}),
-            new SkillGuiInfo(0, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xa8f4a1, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 0, 0)));
+            new SkillGuiInfo(0, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xa8f4a1, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 0, 0)));
 
     public static final SkillInfo PACKLING = new SkillInfo("5cd54257-954f-4962-b248-99f58fb11d5d",
             new SkillGeneralInfo(Skill.Type.OTHER, "general.packling"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 25); }}),
-            new SkillGuiInfo(-50, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xcca58a, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 1, 0)));
+            new SkillGuiInfo(-50, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xcca58a, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 1, 0)));
 
     public static final SkillInfo ARMADILLO = new SkillInfo("28ae60b1-1e8a-4c73-b1a1-5519be35d0ea",
             new SkillGeneralInfo(Skill.Type.OTHER, "general.armadillo"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 50); }}),
-            new SkillGuiInfo(50, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xa8924f, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 2, 0)))
+            new SkillGuiInfo(50, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xa8924f, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 2, 0)))
     {
         @Override
         @Nonnull
@@ -52,7 +52,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.STAT, "general.speed_1"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 50); }}),
-            new SkillGuiInfo(-100, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x662522, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 3, 0)))
+            new SkillGuiInfo(-100, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x662522, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 3, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -65,7 +65,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.STAT, "general.speed_2"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 100); }}),
-            new SkillGuiInfo(0, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb06d1f, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 4, 0)))
+            new SkillGuiInfo(0, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb06d1f, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 4, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -85,7 +85,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.STAT, "general.speed_3"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 150); }}),
-            new SkillGuiInfo(100, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x03595e, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 5, 0)))
+            new SkillGuiInfo(100, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x03595e, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 5, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -105,13 +105,13 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "general.autoswitch"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 100); }}),
-            new SkillGuiInfo(-50, -100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xd8d8d8, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 6, 0)));
+            new SkillGuiInfo(-50, -100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xd8d8d8, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 6, 0)));
 
     public static final SkillInfo FIND_BLOCKLINGS = new SkillInfo("d28ea410-bd84-4a83-8aeb-0451c00314c3",
             new SkillGeneralInfo(Skill.Type.AI, "general.find_blocklings"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 150); }}),
-            new SkillGuiInfo(50, -100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xaaaaff, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 7, 0)))
+            new SkillGuiInfo(50, -100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xaaaaff, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 7, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -124,7 +124,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.AI, "general.patrol"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 100); }}),
-            new SkillGuiInfo(0, -150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x77ffda, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 1, 1)))
+            new SkillGuiInfo(0, -150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x77ffda, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 1, 1)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -137,7 +137,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.AI, "general.courier"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 75); }}),
-            new SkillGuiInfo(0, 100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffc72d, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 8, 0)))
+            new SkillGuiInfo(0, 100, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffc72d, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 8, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -151,7 +151,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "general.advanced_courier"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 100); }}),
-            new SkillGuiInfo(-50, 150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x00ed83, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 9, 0)))
+            new SkillGuiInfo(-50, 150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x00ed83, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 9, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -179,7 +179,7 @@ public class GeneralSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "general.first_class"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.TOTAL, 125); }}),
-            new SkillGuiInfo(50, 150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x81bd63, new SkillGuiInfo.SkillIconTexture(Textures.Skills.General.ICONS, 0, 1)))
+            new SkillGuiInfo(50, 150, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x81bd63, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/general.png"), 0, 1)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)

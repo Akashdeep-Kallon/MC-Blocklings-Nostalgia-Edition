@@ -11,6 +11,8 @@ import com.akah.blocklings.util.event.IEvent;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -76,7 +78,8 @@ public class PatrolTypeProperty extends Property
 
     @Nonnull
     @Override
-    public BaseControl createControl()
+    @OnlyIn(Dist.CLIENT)
+    public Object createControl()
     {
         SingleSelectorStrip<Type> selector = new SingleSelectorStrip<>();
         selector.setOptions(Arrays.asList(Type.values()));

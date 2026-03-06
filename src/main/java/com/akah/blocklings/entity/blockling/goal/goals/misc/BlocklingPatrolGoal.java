@@ -463,9 +463,12 @@ public class BlocklingPatrolGoal extends BlocklingTargetGoal<PatrolPoint> implem
 
     @Nonnull
     @Override
-    public void addConfigTabControls(@Nonnull TabbedPanel tabbedPanel)
+    @OnlyIn(Dist.CLIENT)
+    public void addConfigTabControls(@Nonnull Object tabbedPanelObj)
     {
-        super.addConfigTabControls(tabbedPanel);
+        TabbedPanel tabbedPanel = (TabbedPanel) tabbedPanelObj;
+
+        super.addConfigTabControls(tabbedPanelObj);
 
         BaseControl pointsTabContainer = tabbedPanel.addTab(new BlocklingsComponent("config.patrol.points"));
         pointsTabContainer.setCanScrollVertically(true);

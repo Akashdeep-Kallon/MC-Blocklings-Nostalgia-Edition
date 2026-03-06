@@ -1,6 +1,6 @@
 package com.akah.blocklings.entity.blockling.skill.skills;
 
-import com.akah.blocklings.client.gui.texture.Textures;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
 import com.akah.blocklings.entity.blockling.attribute.BlocklingAttributes;
 import com.akah.blocklings.entity.blockling.skill.BlocklingSkills;
 import com.akah.blocklings.entity.blockling.skill.Skill;
@@ -21,7 +21,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.AI, "combat.novice_guard"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ }}),
-            new SkillGuiInfo(0, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdddddd, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 0, 0)))
+            new SkillGuiInfo(0, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdddddd, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 0, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -35,7 +35,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.whitelist"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 5); }}),
-            new SkillGuiInfo(0, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 1, 0)))
+            new SkillGuiInfo(0, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 1, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -55,7 +55,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.sharpness"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 10); }}),
-            new SkillGuiInfo(70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffd56d, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 2, 0)))
+            new SkillGuiInfo(70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffd56d, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 2, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -75,7 +75,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.berserker"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 25); }}),
-            new SkillGuiInfo(140, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb72626, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 3, 0)))
+            new SkillGuiInfo(140, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb72626, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 3, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -108,7 +108,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.momentum"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 25); }}),
-            new SkillGuiInfo(140, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xad79b5, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 4, 0)))
+            new SkillGuiInfo(140, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xad79b5, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 4, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -135,7 +135,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.wreckless"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 25); }}),
-            new SkillGuiInfo(210, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x4eb2aa, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 5, 0)))
+            new SkillGuiInfo(210, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x4eb2aa, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 5, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -162,7 +162,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.photophile"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 25); }}),
-            new SkillGuiInfo(210, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xd3b630, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 6, 0)))
+            new SkillGuiInfo(210, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xd3b630, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 6, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -203,7 +203,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.regeneration_1"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 10); }}),
-            new SkillGuiInfo(-140, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xabce61, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 7, 0)))
+            new SkillGuiInfo(-140, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xabce61, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 7, 0)))
     {
         @Override
         @Nonnull
@@ -217,7 +217,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.regeneration_2"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 30); }}),
-            new SkillGuiInfo(-210, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xc4ff47, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 8, 0)))
+            new SkillGuiInfo(-210, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xc4ff47, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 8, 0)))
     {
         @Override
         @Nonnull
@@ -231,7 +231,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.regeneration_3"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 50); }}),
-            new SkillGuiInfo(-280, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x75ff35, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 9, 0)))
+            new SkillGuiInfo(-280, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x75ff35, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 9, 0)))
     {
         @Override
         @Nonnull
@@ -245,7 +245,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.AI, "combat.hunter"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 25); }}),
-            new SkillGuiInfo(0, -140, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x8e0000, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 0, 1)))
+            new SkillGuiInfo(0, -140, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x8e0000, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 0, 1)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -265,7 +265,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.animal_hunter"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 50); }}),
-            new SkillGuiInfo(-70, -210, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdb6da9, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 1, 1)))
+            new SkillGuiInfo(-70, -210, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdb6da9, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 1, 1)))
     {
         @Override
         @Nonnull
@@ -286,7 +286,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.STAT, "combat.monster_hunter"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 50); }}),
-            new SkillGuiInfo(70, -210, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x1e681f, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 2, 1)))
+            new SkillGuiInfo(70, -210, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x1e681f, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 2, 1)))
     {
         @Override
         @Nonnull
@@ -307,7 +307,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.poison_attacks"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 30); }}),
-            new SkillGuiInfo(-70, -70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x3a6e18, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 3, 1)))
+            new SkillGuiInfo(-70, -70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x3a6e18, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 3, 1)))
     {
         @Override
         @Nonnull
@@ -328,7 +328,7 @@ public class CombatSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "combat.wither_attacks"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.COMBAT, 30); }}),
-            new SkillGuiInfo(-70, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x2d2122, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Combat.ICONS, 4, 1)))
+            new SkillGuiInfo(-70, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x2d2122, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/combat.png"), 4, 1)))
     {
         @Override
         @Nonnull

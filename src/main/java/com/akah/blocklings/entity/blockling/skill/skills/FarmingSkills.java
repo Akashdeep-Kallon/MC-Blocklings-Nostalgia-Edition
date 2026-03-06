@@ -1,6 +1,6 @@
 package com.akah.blocklings.entity.blockling.skill.skills;
 
-import com.akah.blocklings.client.gui.texture.Textures;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
 import com.akah.blocklings.entity.blockling.attribute.BlocklingAttributes;
 import com.akah.blocklings.entity.blockling.skill.BlocklingSkills;
 import com.akah.blocklings.entity.blockling.skill.Skill;
@@ -21,7 +21,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.AI, "farming.novice_farmer"),
             new SkillDefaultsInfo(Skill.State.UNLOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ }}),
-            new SkillGuiInfo(0, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdddddd, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 0, 0)))
+            new SkillGuiInfo(0, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xdddddd, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 0, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -34,7 +34,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "farming.crop_whitelist"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 5); }}),
-            new SkillGuiInfo(0, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 1, 0)))
+            new SkillGuiInfo(0, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 1, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -54,7 +54,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.STAT, "farming.efficiency"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 10); }}),
-            new SkillGuiInfo(70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffd56d, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 2, 0)))
+            new SkillGuiInfo(70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xffd56d, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 2, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -74,7 +74,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.AI, "farming.replanter"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 10); }}),
-            new SkillGuiInfo(-70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x64de10, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 3, 0)))
+            new SkillGuiInfo(-70, 0, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x64de10, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 3, 0)))
     {
         @Override
         @Nonnull
@@ -88,7 +88,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.OTHER, "farming.seed_whitelist"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 15); }}),
-            new SkillGuiInfo(-70, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 1, 0)))
+            new SkillGuiInfo(-70, 70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xe0f1ff, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 1, 0)))
     {
         @Override
         @Nonnull
@@ -108,7 +108,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.STAT, "farming.adrenaline"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 25); }}),
-            new SkillGuiInfo(140, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb72626, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 4, 0)))
+            new SkillGuiInfo(140, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0xb72626, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 4, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -141,7 +141,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.STAT, "farming.momentum"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 25); }}),
-            new SkillGuiInfo(140, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x39bb39, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 5, 0)))
+            new SkillGuiInfo(140, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x39bb39, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 5, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -168,7 +168,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.STAT, "farming.hasty"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 25); }}),
-            new SkillGuiInfo(210, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x4eb2aa, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 6, 0)))
+            new SkillGuiInfo(210, -50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x4eb2aa, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 6, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -195,7 +195,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.STAT, "farming.night_owl"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 25); }}),
-            new SkillGuiInfo(210, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x2b2a3d, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 7, 0)))
+            new SkillGuiInfo(210, 50, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x2b2a3d, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 7, 0)))
     {
         @Override
         public void onBuy(@Nonnull Skill skill)
@@ -236,7 +236,7 @@ public class FarmingSkills
             new SkillGeneralInfo(Skill.Type.AI, "farming.scythe"),
             new SkillDefaultsInfo(Skill.State.LOCKED),
             new SkillRequirementsInfo(new HashMap<BlocklingAttributes.Level, Integer>() {{ put(BlocklingAttributes.Level.FARMING, 50); }}),
-            new SkillGuiInfo(0, -70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x6b4e49, new SkillGuiInfo.SkillIconTexture(Textures.Skills.Farming.ICONS, 8, 0)))
+            new SkillGuiInfo(0, -70, SkillGuiInfo.ConnectionType.SINGLE_LONGEST_FIRST, 0x6b4e49, new SkillGuiInfo.SkillIconTexture(new BlocklingsResourceLocation("textures/gui/skills_icons/farming.png"), 8, 0)))
     {
         @Override
         @Nonnull
