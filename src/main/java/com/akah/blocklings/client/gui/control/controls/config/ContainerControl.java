@@ -47,7 +47,7 @@ import java.util.stream.Collectors;
 /**
  * A control used to configure a container.
  */
-@Mod.EventBusSubscriber(modid = Blocklings.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid = Blocklings.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class ContainerControl extends GridPanel
 {
     /**
