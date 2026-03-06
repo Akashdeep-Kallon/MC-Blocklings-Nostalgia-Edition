@@ -3,6 +3,7 @@ package com.akah.blocklings.event;
 import com.akah.blocklings.Blocklings;
 import com.akah.blocklings.entity.BlocklingsEntityTypes;
 import com.akah.blocklings.entity.blockling.BlocklingEntity;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
