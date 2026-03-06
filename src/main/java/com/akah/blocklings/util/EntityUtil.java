@@ -14,7 +14,6 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.util.Lazy;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -36,8 +35,30 @@ public class EntityUtil
     /**
      * A map of entities that should be deemed attackable by a blockling in game.
      */
+    @Nullable
+    private static Map<ResourceLocation, Entity> validAttackTargetsCache;
+
+    /**
+     * @return the map of valid attack targets, lazily initialised.
+     */
     @Nonnull
-    public static final Lazy<Map<ResourceLocation, Entity>> VALID_ATTACK_TARGETS = Lazy.of(EntityUtil::createValidAttackTargetsMap);
+    public static Map<ResourceLocation, Entity> getValidAttackTargets()
+    {
+        if (validAttackTargetsCache == null)
+        {
+            validAttackTargetsCache = createValidAttackTargetsMap();
+        }
+
+        return validAttackTargetsCache;
+    }
+
+    /**
+     * Clears the attack target cache so it can be rebuilt for the current world.
+     */
+    public static void invalidateValidAttackTargets()
+    {
+        validAttackTargetsCache = null;
+    }
 
     /**
      * @return the map of valid attack targets.

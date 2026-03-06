@@ -18,6 +18,8 @@ import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LootingLevelEvent;
 import net.minecraftforge.event.level.LevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nonnull;
@@ -34,13 +36,24 @@ public class ForgeEventBusEvents
     @SubscribeEvent
     public static void onWorldLoad(@Nonnull LevelEvent.Load event)
     {
-        if (event.getLevel() instanceof net.minecraft.world.level.Level level) {
-            EntityUtil.latestWorld = level;
-            BlockUtil.latestWorld = level;
+        if (!(event.getLevel() instanceof Level level))
+        {
+            return;
+        }
+
+        EntityUtil.latestWorld = level;
+        BlockUtil.latestWorld = level;
+
+        ResourceKey<Level> dimension = level.dimension();
+
+        if (!dimension.equals(Level.OVERWORLD))
+        {
+            return;
         }
 
         BlocklingType.init();
         ToolUtil.init();
+        EntityUtil.invalidateValidAttackTargets();
 
         BlocklingWhistleItem.BLOCKLINGS_TO_WHISTLES.clear();
     }

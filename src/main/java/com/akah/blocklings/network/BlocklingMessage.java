@@ -5,6 +5,8 @@ import com.akah.blocklings.entity.blockling.BlocklingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -72,7 +74,27 @@ public abstract class BlocklingMessage<T extends BlocklingMessage<T>> extends Me
             Player player = isClient ? getClientPlayer() : context.getSender();
             Objects.requireNonNull(player, "No player entity found when handling message.");
 
-            Entity entity = player.level().getEntity(blocklingId);
+            Entity entity = null;
+
+            if (isClient)
+            {
+                entity = player.level().getEntity(blocklingId);
+            }
+            else if (player instanceof ServerPlayer serverPlayer)
+            {
+                if (serverPlayer.getServer() != null)
+                {
+                    for (ServerLevel level : serverPlayer.getServer().getAllLevels())
+                    {
+                        entity = level.getEntity(blocklingId);
+
+                        if (entity != null)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
 
             if (!(entity instanceof BlocklingEntity foundBlockling))
             {
