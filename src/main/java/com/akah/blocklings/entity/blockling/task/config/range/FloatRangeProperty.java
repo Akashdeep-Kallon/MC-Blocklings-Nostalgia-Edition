@@ -76,7 +76,7 @@ public class FloatRangeProperty extends RangeProperty<Float>
     @OnlyIn(Dist.CLIENT)
     @Override
     @Nonnull
-    public BaseControl createControl()
+    public Object createControl()
     {
         FloatRangeControl range = new FloatRangeControl(min, max, value)
         {
