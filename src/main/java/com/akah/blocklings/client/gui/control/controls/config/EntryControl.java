@@ -60,7 +60,7 @@ public class EntryControl extends Control
 
         if (whitelist.type == Whitelist.Type.ENTITY)
         {
-            LivingEntity entity = (LivingEntity) EntityUtil.VALID_ATTACK_TARGETS.get().get(entry.getKey());
+            LivingEntity entity = (LivingEntity) EntityUtil.getValidAttackTargets().get(entry.getKey());
             EntityControl entityControl = new EntityControl()
             {
                 @Override
