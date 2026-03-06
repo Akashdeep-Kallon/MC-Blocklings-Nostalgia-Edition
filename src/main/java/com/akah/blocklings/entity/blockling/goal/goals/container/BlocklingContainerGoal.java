@@ -48,6 +48,8 @@ import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.ChatFormatting;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.IItemHandler;
 
@@ -614,8 +616,11 @@ public abstract class BlocklingContainerGoal extends BlocklingTargetGoal<Contain
 
     @Nonnull
     @Override
-    public void addConfigTabControls(@Nonnull TabbedPanel tabbedPanel)
+    @OnlyIn(Dist.CLIENT)
+    public void addConfigTabControls(@Nonnull Object tabbedPanelObj)
     {
+        TabbedPanel tabbedPanel = (TabbedPanel) tabbedPanelObj;
+
         boolean advancedUnlocked = blockling.getSkills().getSkill(GeneralSkills.ADVANCED_COURIER).isBought();
         GoalWhitelist itemWhitelist = getItemWhitelist();
 
@@ -670,11 +675,11 @@ public abstract class BlocklingContainerGoal extends BlocklingTargetGoal<Contain
                     ? Arrays.asList(TransferModeProperty.Mode.WHITELIST, TransferModeProperty.Mode.TAKE_ALL)
                     : Arrays.asList(TransferModeProperty.Mode.WHITELIST, TransferModeProperty.Mode.TRANSFER_ALL);
 
-            BaseControl transferModeControl = transferModeProperty.createControl(modes);
+            BaseControl transferModeControl = (BaseControl) transferModeProperty.createControl(modes);
             transferModeControl.setParent(itemsPanel);
             transferModeControl.setWidthPercentage(1.0);
 
-            BaseControl typeCtrl = itemConfigurationTypeProperty.createControl();
+            BaseControl typeCtrl = (BaseControl) itemConfigurationTypeProperty.createControl();
             typeCtrl.setParent(itemsPanel);
             typeCtrl.setWidthPercentage(1.0);
 

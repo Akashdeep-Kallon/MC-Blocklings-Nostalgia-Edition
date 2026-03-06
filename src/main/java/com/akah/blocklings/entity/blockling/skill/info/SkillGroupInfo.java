@@ -1,10 +1,8 @@
 package com.akah.blocklings.entity.blockling.skill.info;
 
-import com.akah.blocklings.client.gui.texture.Texture;
-import com.akah.blocklings.client.gui.texture.Textures;
 import com.akah.blocklings.util.BlocklingsComponent;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nonnull;
 import java.util.UUID;
@@ -30,7 +28,7 @@ public class SkillGroupInfo
      * The skill group's background texture.
      */
     @Nonnull
-    public final Textures.Skills.Tiles backgroundTexture;
+    public final ResourceLocation backgroundTexture;
 
     /**
      * The skill group's gui title.
@@ -43,7 +41,7 @@ public class SkillGroupInfo
      * @param key the skill group's key.
      * @param backgroundTexture the skill group's background texture.
      */
-    public SkillGroupInfo(@Nonnull String id, @Nonnull String key, @Nonnull Textures.Skills.Tiles backgroundTexture)
+    public SkillGroupInfo(@Nonnull String id, @Nonnull String key, @Nonnull ResourceLocation backgroundTexture)
     {
         this.id = UUID.fromString(id);
         this.key = key;

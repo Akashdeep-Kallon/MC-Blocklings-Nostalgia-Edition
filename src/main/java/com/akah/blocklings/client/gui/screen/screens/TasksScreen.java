@@ -347,7 +347,7 @@ public class TasksScreen extends TabbedScreen
                 nameControl.setText(property.name);
                 nameControl.setMarginTop(8.0);
 
-                BaseControl propertyControl = property.createControl();
+                BaseControl propertyControl = (BaseControl) property.createControl();
                 propertyControl.setParent(miscStackPanel);
                 propertyControl.setMarginTop(3.0);
             }

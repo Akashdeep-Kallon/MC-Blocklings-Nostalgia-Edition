@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Specification-Title: blocklings
 Specification-Vendor: AkaH
 Specification-Version: 1
-Implementation-Title: MC-Blocklings-Port-main
-Implementation-Version: 1.0.0
+Implementation-Title: MC-Blocklings-Nostalgia-Edition
+Implementation-Version: 1.0.1
 Implementation-Vendor: AkaH
-Implementation-Timestamp: 2026-03-05T18:55:59+0100
+Implementation-Timestamp: 2026-03-06T15:39:43+0100
 

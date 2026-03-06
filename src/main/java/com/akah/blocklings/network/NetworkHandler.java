@@ -15,6 +15,7 @@ import com.akah.blocklings.entity.blockling.goal.goals.container.BlocklingContai
 import com.akah.blocklings.entity.blockling.task.config.Property;
 import com.akah.blocklings.network.messages.*;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -148,7 +149,14 @@ public class NetworkHandler
      */
     public static void sendToClient(Player player, Message message)
     {
-        HANDLER.sendTo(message, ((ServerPlayer) player).connection.connection, NetworkDirection.PLAY_TO_CLIENT);
+        if (player instanceof ServerPlayer serverPlayer)
+        {
+            HANDLER.sendTo(message, serverPlayer.connection.connection, NetworkDirection.PLAY_TO_CLIENT);
+        }
+        else
+        {
+            Blocklings.LOGGER.warn("sendToClient called with non-ServerPlayer: {}", player.getClass().getName());
+        }
     }
 
     /**
@@ -171,6 +179,21 @@ public class NetworkHandler
 
     public static void sendToAllClients(Level world, Message message, UUID playerIdToIgnore)
     {
+        if (!world.isClientSide && world instanceof ServerLevel serverLevel)
+        {
+            for (ServerPlayer player : serverLevel.getServer().getPlayerList().getPlayers())
+            {
+                if (playerIdToIgnore != null && player.getUUID().equals(playerIdToIgnore))
+                {
+                    continue;
+                }
+
+                sendToClient(player, message);
+            }
+
+            return;
+        }
+
         for (Player player : world.players())
         {
             if (playerIdToIgnore != null && player.getUUID().equals(playerIdToIgnore))

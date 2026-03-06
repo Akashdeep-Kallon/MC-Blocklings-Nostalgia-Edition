@@ -2,10 +2,9 @@ package com.akah.blocklings.entity.blockling.task.config;
 
 import com.akah.blocklings.client.gui.control.BaseControl;
 import com.akah.blocklings.client.gui.control.controls.SingleSelectorStrip;
-import com.akah.blocklings.client.gui.control.controls.config.ItemsConfigurationControl;
+
 import com.akah.blocklings.client.gui.control.event.events.SelectionChangedEvent;
 import com.akah.blocklings.entity.blockling.goal.BlocklingGoal;
-import com.akah.blocklings.entity.blockling.goal.config.iteminfo.OrderedItemInfoSet;
 import com.akah.blocklings.util.BlocklingsComponent;
 import com.akah.blocklings.util.Version;
 import com.akah.blocklings.util.event.EventHandler;
@@ -13,6 +12,8 @@ import com.akah.blocklings.util.event.IEvent;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -78,7 +79,8 @@ public class ItemConfigurationTypeProperty extends Property
 
     @Nonnull
     @Override
-    public BaseControl createControl()
+    @OnlyIn(Dist.CLIENT)
+    public Object createControl()
     {
         SingleSelectorStrip<Type> selector = new SingleSelectorStrip<>();
         selector.setOptions(Arrays.asList(Type.values()));
@@ -142,24 +144,6 @@ public class ItemConfigurationTypeProperty extends Property
         SIMPLE,
         ADVANCED;
 
-        /**
-         * Creates a new {@link ItemsConfigurationControl} based on the type.
-         *
-         * @param itemInfoSet the {@link OrderedItemInfoSet} to use.
-         * @param isTakeItems whether the items are being taken or deposited.
-         * @return the new {@link ItemsConfigurationControl}.
-         */
-        @Nonnull
-        public ItemsConfigurationControl createItemsConfigurationControl(@Nonnull OrderedItemInfoSet itemInfoSet, boolean isTakeItems)
-        {
-            switch (this)
-            {
-                case ADVANCED:
-                    return new ItemsConfigurationControl.AdvancedItemsConfigurationControl(itemInfoSet, isTakeItems);
-                default:
-                    return new ItemsConfigurationControl.SimpleItemsConfigurationControl(itemInfoSet, isTakeItems);
-            }
-        }
 
         @Override
         public String toString()

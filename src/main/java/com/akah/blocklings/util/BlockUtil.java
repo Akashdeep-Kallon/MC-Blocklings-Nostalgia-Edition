@@ -76,9 +76,20 @@ public class BlockUtil
             for (Direction direction : Direction.values())
             {
                 // If the block has an item handler capability, it is considered a container.
-                if (tileEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, direction).isPresent())
+                // Wrapped in try-catch because some mods (e.g. EvilCraft) call getLevel()
+                // inside getCapability(), and the BlockEntity created here has no level set.
+                try
                 {
-                    containers.add(block);
+                    if (tileEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, direction).isPresent())
+                    {
+                        containers.add(block);
+
+                        break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Blocklings.LOGGER.debug("Skipping block {} (direction {}) during container detection: {}", BuiltInRegistries.BLOCK.getKey(block), direction, e.getMessage());
 
                     break;
                 }

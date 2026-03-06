@@ -76,7 +76,7 @@ public class IntRangeProperty extends RangeProperty<Integer>
     @OnlyIn(Dist.CLIENT)
     @Override
     @Nonnull
-    public BaseControl createControl()
+    public Object createControl()
     {
         return new IntRangeControl(min, max, value)
         {

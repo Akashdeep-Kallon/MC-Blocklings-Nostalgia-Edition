@@ -1,7 +1,7 @@
 package com.akah.blocklings.entity.blockling.task;
 
 import com.akah.blocklings.client.gui.texture.Texture;
-import com.akah.blocklings.client.gui.texture.Textures;
+import com.akah.blocklings.util.BlocklingsResourceLocation;
 import com.akah.blocklings.entity.blockling.BlocklingEntity;
 import com.akah.blocklings.entity.blockling.goal.BlocklingGoal;
 import com.akah.blocklings.entity.blockling.goal.goals.combat.BlocklingMeleeAttackHuntGoal;
@@ -41,7 +41,7 @@ public class BlocklingTasks implements IReadWriteNBT
 {
     public static final int MAX_TASKS = 32;
 
-    public static final TaskType NULL = new TaskType("1c330075-19af-4c12-ac20-6de50e7b84a9", "null", false, false, new Texture(Textures.Tasks.TASKS, 176, 166, 20, 20), ((i, b, t) -> null));
+    public static final TaskType NULL = new TaskType("1c330075-19af-4c12-ac20-6de50e7b84a9", "null", false, false, new Texture(new BlocklingsResourceLocation("textures/gui/tasks.png"), 176, 166, 20, 20), ((i, b, t) -> null));
     public static final TaskType MELEE_ATTACK_HURT_BY = new TaskType("2888dde5-f6ee-439d-ab8d-ea9a91470c64", "hurt_by_melee", true, true, new GoalTexture(3, 0), BlocklingMeleeAttackHurtByGoal::new);
     public static final TaskType MELEE_ATTACK_OWNER_HURT_BY = new TaskType("72b27eb1-e5bd-48e0-b562-74dece3d144a", "owner_hurt_by_melee", false, false, new GoalTexture(5, 0), BlocklingMeleeAttackOwnerHurtByGoal::new);
     public static final TaskType MELEE_ATTACK_OWNER_HURT = new TaskType("51d0ae15-8605-4240-a515-89f47b2f450a", "owner_hurt_melee", false, false, new GoalTexture(4, 0), BlocklingMeleeAttackOwnerHurtGoal::new);
@@ -196,7 +196,7 @@ public class BlocklingTasks implements IReadWriteNBT
             taskTag.putInt("priority", task.getPriority());
             taskTag.putString("custom_name", task.getActualCustomName());
 
-            if (task.isConfigured())
+            if (task.isConfigured() && task.getGoal() != null)
             {
                 CompoundTag whitelistsTag = new CompoundTag();
 
@@ -264,7 +264,7 @@ public class BlocklingTasks implements IReadWriteNBT
                 Task task = getTask(taskId);
                 task.setCustomName(taskTag.getString("custom_name"), false);
 
-                if (task.isConfigured())
+                if (task.isConfigured() && task.getGoal() != null)
                 {
                     CompoundTag whitelistsTag = (CompoundTag) taskTag.get("whitelists");
 
@@ -320,7 +320,7 @@ public class BlocklingTasks implements IReadWriteNBT
             buf.writeUUID(task.id);
             FriendlyByteBufUtils.writeString(buf, task.getActualCustomName());
 
-            if (task.isConfigured())
+            if (task.isConfigured() && task.getGoal() != null)
             {
                 for (GoalWhitelist whitelist : task.getGoal().whitelists)
                 {
@@ -358,7 +358,7 @@ public class BlocklingTasks implements IReadWriteNBT
             Task task = getTask(taskId);
             task.setCustomName(FriendlyByteBufUtils.readString(buf), false);
 
-            if (task.isConfigured())
+            if (task.isConfigured() && task.getGoal() != null)
             {
                 for (GoalWhitelist whitelist : task.getGoal().whitelists)
                 {
@@ -605,7 +605,7 @@ public class BlocklingTasks implements IReadWriteNBT
 
         public GoalTexture(int x, int y)
         {
-            super(Textures.Tasks.TASKS, x * ICON_SIZE, y * ICON_SIZE + ICON_TEXTURE_Y, ICON_SIZE, ICON_SIZE);
+            super(new BlocklingsResourceLocation("textures/gui/tasks.png"), x * ICON_SIZE, y * ICON_SIZE + ICON_TEXTURE_Y, ICON_SIZE, ICON_SIZE);
         }
     }
 }

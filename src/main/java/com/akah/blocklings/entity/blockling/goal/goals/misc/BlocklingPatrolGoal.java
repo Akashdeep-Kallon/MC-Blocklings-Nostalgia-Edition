@@ -30,6 +30,8 @@ import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.ChatFormatting;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -463,9 +465,12 @@ public class BlocklingPatrolGoal extends BlocklingTargetGoal<PatrolPoint> implem
 
     @Nonnull
     @Override
-    public void addConfigTabControls(@Nonnull TabbedPanel tabbedPanel)
+    @OnlyIn(Dist.CLIENT)
+    public void addConfigTabControls(@Nonnull Object tabbedPanelObj)
     {
-        super.addConfigTabControls(tabbedPanel);
+        TabbedPanel tabbedPanel = (TabbedPanel) tabbedPanelObj;
+
+        super.addConfigTabControls(tabbedPanelObj);
 
         BaseControl pointsTabContainer = tabbedPanel.addTab(new BlocklingsComponent("config.patrol.points"));
         pointsTabContainer.setCanScrollVertically(true);
