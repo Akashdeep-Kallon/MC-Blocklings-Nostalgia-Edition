@@ -339,7 +339,15 @@ public class SkillsPanel extends CanvasPanel
                     int y = (int) -Math.floor(pixelDifY / pixelTileHeight) + j;
                     Random random = new Random(new Random(x).nextInt() * new Random(y).nextInt() + bonusRand);
 
-                    renderTexture(matrixStack, skillGroup.info.backgroundTexture.randomTile(random), renderLocationX, renderLocationY, getChildPixelScaleX(), getChildPixelScaleY());
+                    int tileSize = com.akah.blocklings.client.gui.texture.Textures.Skills.Tiles.TILE_SIZE;
+                    com.akah.blocklings.client.gui.texture.Texture randomTile = new com.akah.blocklings.client.gui.texture.Texture(
+                        skillGroup.info.backgroundTexture,
+                        random.nextInt(256 / tileSize) * tileSize,
+                        random.nextInt(256 / tileSize) * tileSize,
+                        tileSize,
+                        tileSize
+                    );
+                    renderTexture(matrixStack, randomTile, renderLocationX, renderLocationY, getChildPixelScaleX(), getChildPixelScaleY());
                 }
             }
         }
