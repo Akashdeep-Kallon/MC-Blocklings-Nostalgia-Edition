@@ -250,6 +250,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
     public SpawnGroupData finalizeSpawn(@Nonnull ServerLevelAccessor world, @Nonnull DifficultyInstance difficultyInstance, @Nonnull MobSpawnType spawnReason, @Nullable SpawnGroupData entityData, @Nullable CompoundTag entityTag)
     {
         tasks.initDefaultTasks();
+        BlocklingType.ensureInitialized();
 
         if (spawnReason == MobSpawnType.SPAWN_EGG && entityTag != null)
         {
@@ -307,6 +308,13 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
                 setBlocklingType(chosenType, false);
                 stats.init();
             }
+        }
+
+        if (scale <= 0.0f)
+        {
+            double gaussian = getRandom().nextGaussian() * 0.2 + 0.8;
+            float gaussianScale = (float) Math.max(0.45, Math.min(1.4, gaussian));
+            setScale(gaussianScale, false);
         }
 
         return super.finalizeSpawn(world, difficultyInstance, spawnReason, entityData, entityTag);
@@ -381,7 +389,21 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
 
         if (blocklingTag.contains("scale", Tag.TAG_FLOAT))
         {
-            setScale(blocklingTag.getFloat("scale"), false);
+            float savedScale = blocklingTag.getFloat("scale");
+
+            if (savedScale > 0.0f)
+            {
+                setScale(savedScale, false);
+            }
+            else
+            {
+                double gaussian = getRandom().nextGaussian() * 0.2 + 0.8;
+                float healedScale = (float) Math.max(0.45, Math.min(1.4, gaussian));
+                setScale(healedScale, false);
+
+                String blocklingName = hasCustomName() && getCustomName() != null ? getCustomName().getString() : getStringUUID();
+                Blocklings.LOGGER.info("[Blocklings] Healed blockling '{}' from broken scale=0 -> scale={}", blocklingName, healedScale);
+            }
         }
 
         // Health can be overwritten when loading max health modifiers.
@@ -444,10 +466,19 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
     @Override
     public void readSpawnData(@Nonnull FriendlyByteBuf buf)
     {
-        naturalBlocklingType = BlocklingType.TYPES.get(buf.readInt());
-        blocklingType = BlocklingType.TYPES.get(buf.readInt());
+        int naturalIndex = buf.readInt();
+        int typeIndex = buf.readInt();
         blocklingTypeVariant = buf.readInt();
-        setScale(buf.readFloat(), false);
+        float receivedScale = buf.readFloat();
+
+        List<BlocklingType> types = BlocklingType.TYPES;
+        naturalBlocklingType = naturalIndex >= 0 && naturalIndex < types.size() ? types.get(naturalIndex) : BlocklingType.GRASS;
+        blocklingType = typeIndex >= 0 && typeIndex < types.size() ? types.get(typeIndex) : BlocklingType.GRASS;
+
+        if (receivedScale > 0.0f)
+        {
+            setScale(receivedScale, false);
+        }
 
         equipmentInv.decode(buf);
         stats.decode(buf);
@@ -456,6 +487,14 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
 
         equipmentInv.updateToolAttributes();
         stats.updateTypeBonuses(false);
+    }
+
+    @Override
+    @Nonnull
+    public EntityDimensions getDimensions(@Nonnull Pose pose)
+    {
+        float s = scale > 0.0f ? scale : 1.0f;
+        return EntityDimensions.scalable(s, s);
     }
 
     @Override
