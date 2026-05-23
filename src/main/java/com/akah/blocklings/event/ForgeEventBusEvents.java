@@ -60,6 +60,9 @@ public class ForgeEventBusEvents
 
     /**
      * Handles changing the scale/hitbox of a blockling.
+     *
+     * Fallback only: BlocklingEntity now overrides getDimensions directly so this
+     * deprecated event is no longer the primary sizing path.
      */
     @SubscribeEvent
     @SuppressWarnings("removal")
