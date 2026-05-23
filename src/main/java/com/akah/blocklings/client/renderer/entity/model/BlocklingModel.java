@@ -79,8 +79,8 @@ public class BlocklingModel extends EntityModel<BlocklingEntity> implements Arme
     public void setupAnim(@Nonnull BlocklingEntity blockling, float limbSwing, float limbSwingAmount, float ageInTicks, float headYaw, float headPitch)
     {
         EntityDimensions size = blockling.getDimensions(Pose.STANDING);
-        scaleX = size.width;
-        scaleY = size.height;
+        scaleX = size.width > 0.0f ? size.width : 1.0f;
+        scaleY = size.height > 0.0f ? size.height : 1.0f;
 
         float partialTicks = ageInTicks % 1.0f;
 

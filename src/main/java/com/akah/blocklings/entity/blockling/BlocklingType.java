@@ -33,6 +33,7 @@ import java.util.stream.Collectors;
  */
 public class BlocklingType
 {
+    private static boolean initialized = false;
     /**
      * The list of all available blockling types.
      */
@@ -66,6 +67,7 @@ public class BlocklingType
      */
     public static void init()
     {
+        initialized = false;
         FOODS.clear();
         TYPES.forEach(blocklingType -> { blocklingType.spawnPredicates.clear(); blocklingType.foods.clear(); });
 
@@ -176,6 +178,16 @@ public class BlocklingType
         GLOWSTONE.addFoods(Blocks.GLOWSTONE);
         GLOWSTONE.spawnPredicates.add((blockling, world) -> isInWorld(blockling, world, Level.NETHER));
         GLOWSTONE.spawnPredicates.add((blockling, world) -> blockNearbyIs(blockling, world, 16, Blocks.GLOWSTONE));
+
+        initialized = true;
+    }
+
+    public static void ensureInitialized()
+    {
+        if (!initialized)
+        {
+            init();
+        }
     }
 
     /**

@@ -108,10 +108,15 @@ public class VitalCoreItem extends Item
             return InteractionResult.PASS;
         }
 
+        if (!(level instanceof ServerLevelAccessor serverLevel))
+        {
+            return InteractionResult.FAIL;
+        }
+
         BlocklingEntity blockling = new BlocklingEntity(BlocklingsEntityTypes.BLOCKLING.get(), level);
 
         blockling.finalizeSpawn(
-                (ServerLevelAccessor) level,
+                serverLevel,
                 level.getCurrentDifficultyAt(pos),
                 MobSpawnType.SPAWNER,
                 null,

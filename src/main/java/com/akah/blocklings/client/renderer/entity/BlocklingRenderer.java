@@ -26,7 +26,8 @@ public class BlocklingRenderer extends MobRenderer<BlocklingEntity, BlocklingMod
     @Override
     public void render(@Nonnull BlocklingEntity blockling, float yaw, float partialTicks, @Nonnull PoseStack poseStack, @Nonnull MultiBufferSource buffer, int packedLight)
     {
-        shadowRadius = blockling.getScale() * 0.5f;
+        float scale = blockling.getScale();
+        shadowRadius = scale > 0.0f ? scale * 0.5f : 0.5f;
 
         super.render(blockling, yaw, partialTicks, poseStack, buffer, packedLight);
     }

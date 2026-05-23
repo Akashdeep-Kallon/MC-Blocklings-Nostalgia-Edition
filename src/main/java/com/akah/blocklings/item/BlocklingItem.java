@@ -80,6 +80,11 @@ public class BlocklingItem extends Item
     {
         Level world = context.getLevel();
 
+        if (world.isClientSide)
+        {
+            return InteractionResult.SUCCESS;
+        }
+
         if (!world.isClientSide)
         {
             ItemStack stack = context.getItemInHand();
@@ -134,7 +139,7 @@ public class BlocklingItem extends Item
             }
         }
 
-        return InteractionResult.PASS;
+        return InteractionResult.SUCCESS;
     }
 
     @Override
