@@ -1220,7 +1220,7 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
                 {
                     hasPlayerResetCrouchBetweenInteractions = false;
 
-                    if (random.nextInt(4) == 0)
+                    if (random.nextFloat() < getTypeChangeProbability(item))
                     {
                         setBlocklingType(BlocklingType.findTypeForFood(item));
                     }
@@ -1256,6 +1256,46 @@ public class BlocklingEntity extends TamableAnimal implements IReadWriteNBT, IEn
         }
 
         return InteractionResult.PASS;
+    }
+
+    /**
+     * Returns the probability (0.0–1.0) of a successful type change when the player
+     * feeds the blockling the given item while crouching.
+     *
+     * Tier table:
+     *   Netherite (ingot / scrap / block / ancient debris) → 1.0  (guaranteed)
+     *   Diamond   (gem / ore / deepslate ore / block)      → 0.5  (50 %)
+     *   All other ores / minerals (iron, gold, emerald,
+     *     lapis, quartz, obsidian, glowstone…)             → 0.25 (25 %)
+     *   Everything else (logs, stone, dirt, flowers…)      → 0.25 (25 %, same as before)
+     *
+     * @param item the item used by the player.
+     * @return the success probability for a type change.
+     */
+    private float getTypeChangeProbability(@Nonnull Item item)
+    {
+        // --- Tier 1: Netherite — guaranteed ---
+        if (item == Items.NETHERITE_INGOT
+                || item == Items.NETHERITE_SCRAP
+                || item == Item.BY_BLOCK.get(Blocks.NETHERITE_BLOCK)
+                || item == Item.BY_BLOCK.get(Blocks.ANCIENT_DEBRIS))
+        {
+            return 1.0f;
+        }
+
+        // --- Tier 2: Diamond — 50 % ---
+        if (item == Items.DIAMOND
+                || item == Item.BY_BLOCK.get(Blocks.DIAMOND_ORE)
+                || item == Item.BY_BLOCK.get(Blocks.DEEPSLATE_DIAMOND_ORE)
+                || item == Item.BY_BLOCK.get(Blocks.DIAMOND_BLOCK))
+        {
+            return 0.5f;
+        }
+
+        // --- Tier 3: All remaining minerals / ores — 25 % ---
+        // (Iron, Gold, Emerald, Lapis, Quartz, Obsidian, Glowstone, logs, stone, etc.)
+        // The original system was also 25 %, so this is the safe default.
+        return 0.25f;
     }
 
     /**
