@@ -79,18 +79,28 @@ public class EntityUtil
 
         for (ResourceLocation entry : BuiltInRegistries.ENTITY_TYPE.keySet())
         {
-            Entity entity = BuiltInRegistries.ENTITY_TYPE.get(entry).create(latestWorld);
-
-            if (entity != null)
+            try
             {
-                if (isValidAttackTarget(entity))
+                Entity entity = BuiltInRegistries.ENTITY_TYPE.get(entry).create(latestWorld);
+
+                if (entity != null)
                 {
-                    validAttackTargets.put(entry, entity);
+                    if (isValidAttackTarget(entity))
+                    {
+                        validAttackTargets.put(entry, entity);
+                    }
+                }
+                else
+                {
+                    Blocklings.LOGGER.warn("Failed to create entity (returned null): " + entry);
                 }
             }
-            else
+            catch (Exception e)
             {
-                Blocklings.LOGGER.warn("Failed to create entity: " + entry);
+                Blocklings.LOGGER.warn(
+                    "Skipping entity '{}' from valid attack targets - it threw an exception during instantiation (likely missing attribute registration in another mod): {}",
+                    entry, e.getMessage()
+                );
             }
         }
 
